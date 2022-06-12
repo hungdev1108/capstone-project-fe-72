@@ -1,0 +1,58 @@
+// Text
+@mixin Text($fs, $fw, $color) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $color;
+}
+
+// Responsive
+// --breakpoint-desktop: 1200px;
+@mixin desktop-xl() {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+// --breakpoint-lg: 992px;
+@mixin tablet-lg() {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+// --breakpoint-md: 768px;
+@mixin mobile-md() {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+// --breakpoint-sm: 576px;
+@mixin mobile-sm() {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+// Button
+@mixin btn($border, $border-radius, $bg-color, $pdy, $pdx) {
+  border: $border;
+  border-radius: $border-radius;
+  background-color: $bg-color;
+  padding: $pdy pdx;
+}
+
+// Backgound-image
+@mixin bg-img($bg-s, $bg-rp, $bg-ps) {
+  background-size: $bg-s;
+  background-repeat: $bg-rp;
+  background-position: $bg-ps;
+}
+
+// Avatar
+@mixin avt($w, $h, $border-radius, $dblock) {
+  width: $w;
+  height: $h;
+  border-radius: $border-radius;
+  display: $dblock;
+}
