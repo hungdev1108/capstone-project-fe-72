@@ -6,6 +6,13 @@
 }
 
 // Responsive
+
+// --breakpoint-desktop: 1280px;
+@mixin desktop-xxl() {
+  @media (max-width: 1280px) {
+    @content;
+  }
+}
 // --breakpoint-desktop: 1200px;
 @mixin desktop-xl() {
   @media (max-width: 1200px) {
@@ -39,7 +46,7 @@
   border: $border;
   border-radius: $border-radius;
   background-color: $bg-color;
-  padding: $pdy pdx;
+  padding: $pdy $pdx;
 }
 
 // Backgound-image
