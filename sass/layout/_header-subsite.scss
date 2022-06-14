@@ -1,10 +1,10 @@
-.banner-home {
-  background-image: $bg-linear, url(../../img/banner1.jpg);
-  @include bg-img(cover, no-repeat, initial);
+.banner-subsite {
+  background-image: $bg-linear-1, url(../../img/banner2.jpg);
+  @include bg-img(cover, no-repeat, center);
   background-attachment: fixed;
-  min-height: 700px;
+  min-height: 35rem;
   .header {
-    padding: 40px 0 20px 0;
+    padding: 4rem 0 2rem 0;
     .navbar {
       display: flex;
       align-items: center;
@@ -19,9 +19,9 @@
         &--search {
           position: relative;
           .search__input {
-            padding: 10px 50px 10px 20px;
+            padding: 1rem 5rem 1rem 2rem;
             @include Text(1.6rem, $fw-400, $font-color);
-            border-radius: 6px;
+            border-radius: 0.6rem;
             ::-webkit-input-placeholder {
               color: $color-primary;
             }
@@ -41,12 +41,37 @@
         }
         &--darkmode {
           display: block;
-          padding: 0 20px;
+          padding: 0 2rem;
           @include Text(2.5rem, "", $color-white);
         }
         &--menubar {
           cursor: pointer;
           @include Text(3rem, "", $color-white);
+        }
+      }
+    }
+    .breadcrumbs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 8rem;
+      &__path {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+          display: block;
+          text-decoration: none;
+          @include Text(1.8rem, $fw-600, $color-primary);
+        }
+        .breadcrumbs__page {
+          i {
+            @include Text(1.2rem, $fw-600, $color-white);
+            margin: 0 1.2rem;
+          }
+          span {
+            @include Text(1.8rem, $fw-600, $color-white);
+          }
         }
       }
     }

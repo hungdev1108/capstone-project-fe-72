@@ -57,9 +57,9 @@ h4,
 h5,
 span,
 p {
-  font-family: "Quick-sand", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
-// Title footer: "Quick-sand" => h5
+// Title footer: "Quicksand" => h5
 
 h6 {
   font-family: "Pacifico", cursive, sans-serif;
@@ -67,4 +67,9 @@ h6 {
 
 a {
   font-family: "Segoe UI", sans-serif;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-family: "Quicksand", sans-serif;
 }

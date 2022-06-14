@@ -1,7 +1,15 @@
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
 
+@import "./components/button";
+
 @import "./base/typography";
 @import "./base/base";
 
+@import "./layout/header";
+@import "./layout/header-subsite";
+@import "./layout/footer";
+
+@import "./pages/home";
 @import "./pages/about";
+@import "./pages/services";
