@@ -1,0 +1,44 @@
+.title-primary {
+  margin: 0;
+  @include Text(5.4rem, $fw-600, $color-white);
+  text-transform: capitalize;
+  line-height: 6.4rem;
+
+  @include mobile-md {
+    @include Text(4rem, $fw-600, $color-white);
+    line-height: 5rem;
+  }
+
+  @include mobile-sm {
+    @include Text(2.8rem, $fw-600, $color-white);
+    line-height: 3.8rem;
+  }
+}
+
+.title-secondary {
+  margin: 0;
+  @include Text(3.8rem, $fw-600, $color-black);
+  margin-bottom: 2.4rem;
+  line-height: 4.8rem;
+
+  @include mobile-md {
+    @include Text(3.2rem, $fw-600, $color-black);
+    line-height: 4rem;
+  }
+
+  @include mobile-sm {
+    @include Text(2.6rem, $fw-600, $color-black);
+    line-height: 3.6rem;
+  }
+}
+
+.title-section {
+  margin: 0;
+  letter-spacing: 1px;
+  line-height: 3rem;
+  @include Text(2rem, $fw-400, $color-primary);
+
+  @include mobile-sm {
+    @include Text(1.6rem, $fw-400, $color-primary);
+  }
+}

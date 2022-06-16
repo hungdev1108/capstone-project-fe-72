@@ -4,7 +4,7 @@
   background-attachment: fixed;
   min-height: 700px;
   .header {
-    padding: 40px 0 20px 0;
+    padding: 4rem 0 2rem 0;
     .navbar {
       display: flex;
       align-items: center;
@@ -38,6 +38,10 @@
               transform: translate(-50%, -50%);
             }
           }
+
+          @include mobile-sm {
+            display: none;
+          }
         }
         &--darkmode {
           display: block;
@@ -52,14 +56,65 @@
     }
   }
 
-  .form-control {
-    border: 1px solid #fff !important;
+  // banner-info
+  .banner__info {
+    margin-top: 10rem;
+    max-width: 600px;
+    text-align: left;
+
+    &--caption {
+      margin-bottom: 2.4rem;
+    }
+
+    &--desc {
+      padding-right: 4.8rem;
+
+      @include mobile-md {
+        padding-right: 0;
+      }
+    }
+
+    &--button {
+      margin-top: 4.8rem;
+      .btn-banner {
+        transition: all 0.5s;
+
+        i {
+          margin-left: 1rem;
+        }
+
+        &:hover {
+          background-color: #fff;
+          color: $color-primary;
+        }
+      }
+
+      @include mobile-sm {
+        margin-top: 2.4rem;
+      }
+    }
+
+    @include mobile-sm {
+      margin-top: 2rem;
+    }
   }
 
-  .form-control:focus {
-    color: #212529;
-    border-color: #fff !important;
-    outline: none;
-    box-shadow: none !important;
+  @include mobile-md {
+    min-height: 600px;
   }
+  @include mobile-sm {
+    min-height: 450px;
+  }
+}
+
+// form :))
+.form-control {
+  border: 1px solid #fff !important;
+}
+
+.form-control:focus {
+  color: #212529;
+  border-color: #fff !important;
+  outline: none;
+  box-shadow: none !important;
 }

@@ -1,0 +1,399 @@
+// aboutUs
+.aboutUs {
+  padding: 4.8rem 0;
+  .container {
+    padding: 4.8rem 1.5rem;
+    .row {
+      .col {
+        padding: 0;
+        .aboutUs__left {
+          padding: 0 1.5rem;
+
+          @include mobile-md {
+            padding: 0;
+          }
+
+          @include mobile-sm {
+            padding: 0 1.5rem;
+          }
+        }
+      }
+
+      .col {
+        padding: 0;
+        .aboutUs__right {
+          padding: 0 1.5rem 0 4.8rem;
+
+          @include mobile-md {
+            padding: 0;
+          }
+
+          @include mobile-sm {
+            padding: 0 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  @include mobile-sm {
+    padding: 0;
+  }
+}
+
+// booking
+.booking {
+  background-color: $color-primary;
+  .row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+    .col {
+      .booking__left {
+        .booking__left--img {
+          background-image: url(../../img/banner3.jpg);
+          @include bg-img(cover, no-repeat, center);
+          min-height: 600px;
+          position: relative;
+          z-index: 1;
+
+          &::after {
+            content: "";
+            position: absolute;
+            background: rgba(16, 15, 19, 0.46);
+            top: 0;
+            left: 0;
+            right: 0;
+            min-height: 100%;
+            z-index: -1;
+          }
+
+          @include mobile-md {
+            min-height: 200px;
+          }
+        }
+
+        @include mobile-md {
+          padding: 4.8rem 1.5rem;
+        }
+
+        @include mobile-sm {
+          padding: 4.8rem 1.5rem 1rem 1.5rem;
+        }
+      }
+    }
+
+    .col {
+      .booking__right {
+        padding: 6.4rem 7.2rem 5.4rem 7.2rem;
+        .booking__right--info {
+          h6 {
+            color: $color-white;
+          }
+          p {
+            color: $font-color-white;
+          }
+        }
+
+        .info--reviews {
+          margin-top: 4.8rem;
+          .row {
+            .col {
+              .review-item {
+                span {
+                  display: block;
+                  margin-bottom: 2rem;
+
+                  i {
+                    border-radius: 6px;
+                    width: 7rem;
+                    height: 7rem;
+                    line-height: 7rem;
+                    text-align: center;
+                    background-color: $color-white;
+                    @include Text(2.5rem, 0, $color-primary);
+                    transition: all 0.3s;
+                  }
+                }
+                a {
+                  display: block;
+                  margin-bottom: 1rem;
+                  @include Text(2rem, $fw-700, $color-black);
+                  text-decoration: none;
+                }
+
+                &:hover i {
+                  color: $color-secondary;
+                }
+              }
+            }
+          }
+        }
+
+        @include mobile-md {
+          padding: 2.4rem 6.3rem 4rem 6.3rem;
+        }
+
+        @include mobile-sm {
+          padding: 2.4rem 3rem 4rem 3rem;
+        }
+      }
+    }
+  }
+}
+
+// categories
+.categories {
+  background-color: $bg-grey;
+  padding: 7rem 0;
+  &__title {
+    margin-bottom: 4.8rem;
+    text-align: center;
+
+    @include mobile-md {
+      margin-bottom: 0;
+    }
+
+    @include mobile-sm {
+      margin-bottom: 0;
+    }
+  }
+
+  &__content {
+    .row {
+      margin: 0 -15px !important;
+      .col {
+        padding: 0 1.5rem !important;
+        .item {
+          position: relative;
+          margin-bottom: 2.5rem;
+
+          &__image {
+            transition: all 0.4s;
+            img {
+              cursor: pointer;
+              width: 100%;
+              display: block;
+              border-radius: 6px;
+            }
+
+            &:hover {
+              opacity: 0.85;
+            }
+          }
+
+          &__info {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 4.8rem;
+            transform: translate3d(0, 10%, 0);
+            transition: all 0.3s;
+            z-index: 2;
+            h4 {
+              margin-top: 2.4rem;
+              line-height: 3rem;
+              @include Text(2.2rem, $fw-700, $color-white);
+
+              @include mobile-md {
+                font-size: 1.8rem;
+                line-height: 2.8rem;
+              }
+
+              @include mobile-sm {
+                font-size: 1.8rem;
+                line-height: 2.8rem;
+              }
+            }
+            h6 {
+              margin-top: 1rem;
+              span {
+                letter-spacing: 1px;
+                @include Text(1.8rem, $fw-600, $color-secondary);
+              }
+
+              @include mobile-md {
+                margin-top: 0;
+              }
+            }
+
+            @include mobile-sm {
+              padding: 2.4rem;
+            }
+          }
+
+          &__layer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            background: linear-gradient(
+              to bottom,
+              rgba(0, 0, 0, 0) 0,
+              rgba(0, 0, 0, 0.53) 69%,
+              rgba(0, 0, 0, 0.76) 100%
+            );
+            z-index: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+// services
+.services {
+  padding: 9.6rem 0;
+  .row {
+    margin: 0 -15px !important;
+    .col {
+      padding: 0 1.5rem !important;
+      .item {
+        margin-bottom: 2.5rem;
+        .item__service {
+          padding: 4rem;
+          transition: all 0.5s;
+          border: 1px solid $color-white-2;
+          border-radius: 0.8rem;
+          background-color: $color-white;
+          box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
+          .item__service--top {
+            display: flex;
+            align-items: center;
+            .icon {
+              transition: all 0.5s;
+              width: 7rem;
+              height: 7rem;
+              text-align: center;
+              line-height: 7rem;
+              background-color: $bg-light;
+              border-radius: 6px;
+              span {
+                display: block;
+                margin-bottom: 2rem;
+                i {
+                  margin-top: 2.5rem;
+                  @include Text(2.5rem, 0, $color-primary);
+                  transition: all 0.5s;
+                }
+              }
+            }
+
+            .info {
+              padding-left: 3rem;
+              p {
+              }
+              a {
+                text-decoration: none;
+                display: inline-block;
+                &:hover {
+                  color: $color-primary;
+                }
+              }
+            }
+          }
+          .item__service--bottom {
+            p {
+              margin-top: 1.6rem;
+            }
+          }
+
+          &:hover .icon {
+            background-color: $color-primary;
+          }
+          &:hover .icon span i {
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+
+  @include mobile-md {
+    padding: 6.4rem 0;
+  }
+
+  @include mobile-sm {
+    padding: 6.4rem 0;
+  }
+}
+
+// Welcome - Stats
+// welcome
+.welcome-bg {
+  background-image: url(../../img/banner2.jpg);
+  @include bg-img(cover, no-repeat, center);
+  position: relative;
+  min-height: 500px;
+  z-index: 1;
+
+  .welcome__box {
+    padding-top: 10rem;
+    z-index: 2;
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+    h3 {
+      @include Text(4.5rem, $fw-600, $color-white);
+      line-height: 5rem;
+      padding: 0 4.8rem;
+
+      @include mobile-md {
+        @include Text(4rem, $fw-600, $color-white);
+        line-height: 5rem;
+      }
+      @include mobile-sm {
+        @include Text(2.6rem, $fw-600, $color-white);
+        line-height: 3.4rem;
+        padding: 0;
+      }
+    }
+
+    @include mobile-md {
+      padding-top: 7.6rem;
+    }
+
+    @include mobile-sm {
+      padding-top: 5.6rem;
+    }
+  }
+
+  .welcome__action {
+    display: flex;
+    justify-content: center;
+    &--button {
+      margin-top: 4.8rem;
+      margin-right: 2.5rem;
+      .btn-welcome {
+        transition: all 0.5s;
+
+        i {
+          margin-left: 1rem;
+        }
+      }
+
+      @include mobile-sm {
+        margin-top: 2.4rem;
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    background: rgba(16, 15, 19, 0.66);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  @include mobile-md {
+    min-height: 350px;
+  }
+  @include mobile-sm {
+    min-height: 280px;
+  }
+}

@@ -7,14 +7,17 @@ $color-orange-1: rgba(236, 98, 6, 0.98);
 $color-black: #000;
 $color-black-1: rgba(5, 3, 0, 0.2);
 $color-black-2: rgba(5, 3, 0, 0.83);
+$color-black-3: #232121;
 
 $color-grey-2: #a5a2a1;
 $color-grey-3: #ddd;
 
 $color-white: #fff;
+$color-white-2: #eee;
 
 // font
 $font-color: rgba(22, 28, 45, 0.7);
+$font-color-white: #ffdfc9;
 
 $fw-400: 400;
 $fw-500: 500;
@@ -25,3 +28,7 @@ $fw-700: 700;
 $bg-linear: linear-gradient(to right, $color-primary, $color-black-1);
 
 $bg-linear-1: linear-gradient(to right, $color-orange-1, $color-black-2);
+
+$bg-grey: #f7f7f7;
+
+$bg-light: rgba(130, 115, 252, 0.05);

@@ -9,7 +9,7 @@
 
 // --breakpoint-desktop: 1280px;
 @mixin desktop-xxl() {
-  @media (max-width: 1280px) {
+  @media (min-width: 1280px) {
     @content;
   }
 }
