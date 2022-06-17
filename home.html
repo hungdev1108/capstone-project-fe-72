@@ -29,6 +29,16 @@
     <!-- Swiper library link  -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
+    <!-- OwlCarousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -36,6 +46,12 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="./js/magnific-popup.css" />
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
     <!-- Css link -->
     <link rel="stylesheet" href="./css/main.css" />
@@ -451,7 +467,305 @@
       </div>
     </section>
     <!-- Stats -->
-    <section class="stats"></section>
+    <section class="stats">
+      <div class="stats__content">
+        <div class="container">
+          <div class="row">
+            <div class="col col-sm-6 col-md-3 col-lg-3">
+              <div class="item__stats">
+                <span>
+                  <i class="fa fa-building"></i>
+                </span>
+                <div class="counter">
+                  <h4 class="counter-num">15,100</h4>
+                </div>
+                <p class="text-content">Branches</p>
+              </div>
+            </div>
+
+            <div class="col col-sm-6 col-md-3 col-lg-3">
+              <div class="item__stats">
+                <span>
+                  <i class="fa fa-cutlery"></i>
+                </span>
+                <div class="counter">
+                  <h4 class="counter-num">19,256</h4>
+                </div>
+                <p class="text-content">Food Items</p>
+              </div>
+            </div>
+
+            <div class="col col-sm-6 col-md-3 col-lg-3">
+              <div class="item__stats">
+                <span>
+                  <i class="fa fa-users"></i>
+                </span>
+                <div class="counter">
+                  <h4 class="counter-num">12,100</h4>
+                </div>
+                <p class="text-content">Chefs</p>
+              </div>
+            </div>
+
+            <div class="col col-sm-6 col-md-3 col-lg-3">
+              <div class="item__stats">
+                <span>
+                  <i class="fa fa-smile"></i>
+                </span>
+                <div class="counter">
+                  <h4 class="counter-num">2,560</h4>
+                </div>
+                <p class="text-content">Happy Customers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- videointro -->
+    <section class="videoIntro">
+      <div class="container">
+        <div class="videoIntro__content">
+          <div class="videoIntro__play">
+            <a href="https://player.vimeo.com/video/305185528" class="videoplay">
+              <span>
+                <i class="fa fa-play"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <!-- <div class="videoIntro__video hide-video">
+          <iframe
+            src="https://player.vimeo.com/video/305185528"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen=""
+          ></iframe>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="blog">
+      <div class="blog__title">
+        <h6 class="title-section">Latest Posts</h6>
+        <h3 class="title-secondary">Blog Posts</h3>
+      </div>
+      <div class="blog__content">
+        <div class="container">
+          <div class="row">
+            <div class="col col-12 col-md-6 col-lg-4">
+              <div class="item">
+                <div class="item__blog--header">
+                  <a href="" class="img--blog">
+                    <img src="./img/banner1.jpg" alt="" />
+                  </a>
+                  <div class="img--detail">
+                    <a href="">Reciepe</a>
+                    <span>
+                      <i class="fa fa-clock"></i>
+                      10 Min Cook
+                    </span>
+                  </div>
+                </div>
+
+                <div class="item__blog--body">
+                  <a href="" class="desc--blog"
+                    >The Best Cookie Recipes To Bake This Weekend
+                  </a>
+                  <p class="text-content">
+                    Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae
+                    sit.
+                  </p>
+                </div>
+
+                <div class="item__blog--footer">
+                  <div class="anchor--blog">
+                    <a href="" class="anchor--img">
+                      <img src="./img/team1.jpg" alt="" />
+                    </a>
+                    <a href="" class="anchor--name">Rashed Kabir</a>
+                  </div>
+                  <a href="" class="read--blog">
+                    Read More <i class="fa fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-12 col-md-6 col-lg-4">
+              <div class="item">
+                <div class="item__blog--header">
+                  <a href="" class="img--blog">
+                    <img src="./img/banner3.jpg" alt="" />
+                  </a>
+                  <div class="img--detail">
+                    <a href="">Soup</a>
+                    <span>
+                      <i class="fa fa-clock"></i>
+                      10 Min Cook
+                    </span>
+                  </div>
+                </div>
+
+                <div class="item__blog--body">
+                  <a href="" class="desc--blog"
+                    >The Best Cookie Recipes To Bake This Weekend
+                  </a>
+                  <p class="text-content">
+                    Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae
+                    sit.
+                  </p>
+                </div>
+
+                <div class="item__blog--footer">
+                  <div class="anchor--blog">
+                    <a href="" class="anchor--img">
+                      <img src="./img/team2.jpg" alt="" />
+                    </a>
+                    <a href="" class="anchor--name"> Jannatul Ferdous</a>
+                  </div>
+                  <a href="" class="read--blog">
+                    Read More <i class="fa fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-12 col-md-6 col-lg-4">
+              <div class="item">
+                <div class="item__blog--header">
+                  <a href="" class="img--blog">
+                    <img src="./img/banner1.jpg" alt="" />
+                  </a>
+                  <div class="img--detail">
+                    <a href="">Drinks</a>
+                    <span>
+                      <i class="fa fa-clock"></i>
+                      10 Min Cook
+                    </span>
+                  </div>
+                </div>
+
+                <div class="item__blog--body">
+                  <a href="" class="desc--blog"
+                    >The Best Cookie Recipes To Bake This Weekend
+                  </a>
+                  <p class="text-content">
+                    Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae
+                    sit.
+                  </p>
+                </div>
+
+                <div class="item__blog--footer">
+                  <div class="anchor--blog">
+                    <a href="" class="anchor--img">
+                      <img src="./img/team3.jpg" alt="" />
+                    </a>
+                    <a href="" class="anchor--name">Rashed Kabir</a>
+                  </div>
+                  <a href="" class="read--blog">
+                    Read More <i class="fa fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="testimonials__title">
+        <h6 class="title-section">Testimonials</h6>
+        <h3 class="title-secondary">What People Say</h3>
+      </div>
+      <div class="testimonials__content">
+        <div class="container">
+          <div class="testimonials--item">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="item-img">
+                  <img src="./img/team1.jpg" alt="" />
+                </div>
+                <div class="item-quote">
+                  <q>OMG! I cannot believe. It's Awesome</q>
+                </div>
+                <p class="text-content">
+                  My new site is so much faster and easier to work with than my old site.
+                  They are here to help the customers to get their success. Nemo sit eos,
+                  quod minus eius illo labore. Pellen tesque libero ut justo, ultrices in
+                  ligula.
+                </p>
+                <div class="item-info">
+                  <h3>Johnson william</h3>
+                  <p class="text-content">Customer</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-img">
+                  <img src="./img/team2.jpg" alt="" />
+                </div>
+                <div class="item-quote">
+                  <q>OMG! I cannot believe. It's Awesome</q>
+                </div>
+                <p class="text-content">
+                  My new site is so much faster and easier to work with than my old site.
+                  They are here to help the customers to get their success. Nemo sit eos,
+                  quod minus eius illo labore. Pellen tesque libero ut justo, ultrices in
+                  ligula.
+                </p>
+                <div class="item-info">
+                  <h3>Johnson william</h3>
+                  <p class="text-content">Customer</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-img">
+                  <img src="./img/team3.jpg" alt="" />
+                </div>
+                <div class="item-quote">
+                  <q>OMG! I cannot believe. It's Awesome</q>
+                </div>
+                <p class="text-content">
+                  My new site is so much faster and easier to work with than my old site.
+                  They are here to help the customers to get their success. Nemo sit eos,
+                  quod minus eius illo labore. Pellen tesque libero ut justo, ultrices in
+                  ligula.
+                </p>
+                <div class="item-info">
+                  <h3>Johnson william</h3>
+                  <p class="text-content">Customer</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-img">
+                  <img src="./img/team4.jpg" alt="placeholder image" />
+                </div>
+                <div class="item-quote">
+                  <q>OMG! I cannot believe. It's Awesome</q>
+                </div>
+                <p class="text-content">
+                  My new site is so much faster and easier to work with than my old site.
+                  They are here to help the customers to get their success. Nemo sit eos,
+                  quod minus eius illo labore. Pellen tesque libero ut justo, ultrices in
+                  ligula.
+                </p>
+                <div class="item-info">
+                  <h3>Johnson william</h3>
+                  <p class="text-content">Customer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -537,11 +851,17 @@
     <!-- jquery waypoints  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
+    <!-- Magnific Popup -->
+    <script src="./js/jquery.magnific-popup.js"></script>
+
     <!-- countup js  -->
     <script src="./js/jquery.countup.js"></script>
 
     <!-- Swiper js  -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- OwlCarousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <!-- JS -->
     <script src="./js/index.js"></script>
