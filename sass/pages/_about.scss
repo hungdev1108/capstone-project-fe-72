@@ -1,0 +1,263 @@
+// the story AboutUS
+.story {
+  padding: 9.6rem 0 7.6rem 0;
+
+  &__title {
+    margin-bottom: 7rem;
+    text-align: left;
+
+    @include mobile-md {
+      margin-bottom: 0;
+    }
+
+    @include mobile-sm {
+      margin-bottom: 0;
+    }
+  }
+
+  &__content {
+    .row {
+      align-items: center;
+      .col {
+        .story__img {
+          img {
+            width: 100%;
+            border-radius: 6px;
+          }
+
+          @include mobile-md {
+            margin-top: 2rem;
+          }
+        }
+
+        .story__text {
+          padding: 0 1.5rem 0 4.8rem;
+
+          p {
+            margin-bottom: 2rem;
+          }
+
+          &--button {
+            margin-top: 4.8rem;
+            .btn-story {
+              transition: all 0.5s;
+              i {
+                margin-left: 1rem;
+              }
+            }
+
+            @include mobile-sm {
+              margin-top: 2.4rem;
+            }
+
+            @include mobile-md {
+              margin-top: 3rem;
+            }
+          }
+
+          @include mobile-sm {
+            margin-top: 2rem;
+          }
+
+          @include mobile-md {
+            padding: 4.8rem 0 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__detail {
+    margin-top: 4.8rem;
+    .row {
+      align-items: center;
+      .col {
+        .story__detail--right {
+          .row {
+            justify-content: space-between;
+            .col {
+              flex-basis: 31%;
+
+              a {
+                display: block;
+                margin-bottom: 0.8rem;
+                text-decoration: none;
+                @include Text(2rem, $fw-600, $color-primary);
+                line-height: 3.2rem;
+                transition: all 0.3s;
+
+                &:hover {
+                  color: $color-secondary;
+                }
+              }
+
+              p {
+                @include mobile-md {
+                  margin-bottom: 3.2rem;
+                }
+              }
+
+              @include mobile-md {
+                flex-basis: 100%;
+              }
+
+              @include mobile-sm {
+                flex-basis: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include mobile-md {
+    padding: 4.8rem 0;
+  }
+}
+
+// skills
+.skills {
+  padding: 9.6rem 0 7.6rem 0;
+  background: $bg-grey;
+  .row {
+    .col {
+      .skills__title {
+        margin-bottom: 2rem;
+        text-align: left;
+
+        @include mobile-md {
+          margin-bottom: 0;
+        }
+
+        @include mobile-sm {
+          margin-bottom: 0;
+        }
+      }
+
+      .skills__progress {
+        &--item {
+          margin-bottom: 2rem;
+
+          .progress {
+            height: 0.6rem;
+            background-color: $font-color;
+
+            .progress-bar-striped {
+              background-image: none;
+            }
+
+            .progress-bar {
+              background-color: $color-primary;
+              transition: width 5s ease;
+            }
+          }
+        }
+      }
+
+      .skills__img {
+        padding: 0 1.5rem 0 4.8rem;
+        .row {
+          .col {
+            flex-basis: 50%;
+            img {
+              width: 100%;
+              border-radius: 6px;
+            }
+          }
+        }
+
+        @include mobile-md {
+          margin-top: 2rem;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  @include mobile-md {
+    padding: 4.8rem 0;
+  }
+}
+
+//ourteam
+.ourteam {
+  padding: 7rem 0;
+  &__title {
+    margin-bottom: 4.8rem;
+    text-align: center;
+
+    @include mobile-md {
+      margin-bottom: 0;
+    }
+
+    @include mobile-sm {
+      margin-bottom: 0;
+    }
+  }
+
+  &__content {
+    .row {
+      .col {
+        .ourteam__content--item {
+          text-align: center;
+
+          .team--img {
+            position: relative;
+
+            img {
+              display: block;
+              width: 100%;
+              border-radius: 6px;
+            }
+
+            .team--social-hover {
+              position: absolute;
+              width: 100%;
+              bottom: 4rem;
+              left: 50%;
+              transform: translateX(-50%);
+              transition: all 0.5s ease;
+              display: none;
+              opacity: 0;
+
+              span {
+                a {
+                  color: $color-white;
+                  margin-left: 1rem;
+
+                  i {
+                    height: 4.2rem;
+                    width: 4.2rem;
+                    border-radius: 50%;
+                    line-height: 4.2rem;
+                    background-color: $bg-icon-hover;
+                    transition: all 0.3s;
+
+                    &:hover {
+                      color: $color-primary;
+                      background-color: $color-white;
+                    }
+                  }
+                }
+              }
+            }
+
+            &:hover .team--social-hover {
+              opacity: 1;
+              display: inline-block;
+            }
+          }
+
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  @include mobile-md {
+    padding: 4.8rem 0;
+  }
+}

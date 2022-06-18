@@ -29,3 +29,20 @@
     padding: 1rem 2.1rem;
   }
 }
+
+.btn--orange-light {
+  @include btn(2px solid $color-primary, 5px, $color-primary, 1.2rem, 4.5rem);
+
+  @include Text(1.6rem, $fw-700, $color-white);
+  line-height: 3rem;
+
+  &:hover {
+    opacity: 0.8;
+    color: $color-white;
+    background-color: $color-primary;
+  }
+
+  @include mobile-sm {
+    padding: 1rem 2.1rem;
+  }
+}

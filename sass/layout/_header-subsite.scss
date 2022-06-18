@@ -38,6 +38,10 @@
               transform: translate(-50%, -50%);
             }
           }
+
+          @include mobile-md {
+            display: none;
+          }
         }
         &--darkmode {
           display: block;

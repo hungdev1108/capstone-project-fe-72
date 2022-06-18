@@ -164,8 +164,11 @@
       .col {
         padding: 0 1.5rem !important;
         .item {
+          overflow: hidden;
           position: relative;
           margin-bottom: 2.5rem;
+          border-bottom-left-radius: 6px;
+          border-bottom-right-radius: 6px;
 
           &__image {
             transition: all 0.4s;

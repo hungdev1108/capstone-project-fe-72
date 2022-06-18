@@ -24,3 +24,22 @@
     @include Text(2rem, $fw-600, $color-black-3);
   }
 }
+
+.text-progress {
+  @include Text(1.8rem, $fw-700, $color-black-3);
+  margin-bottom: 1rem;
+}
+
+.text-team {
+  @include Text(2.4rem, $fw-700, $color-black-3);
+  margin-top: 2.5rem;
+  display: block;
+
+  &:hover {
+    color: $color-primary;
+  }
+
+  @include mobile-sm {
+    @include Text(1.8rem, $fw-700, $color-black-3);
+  }
+}
