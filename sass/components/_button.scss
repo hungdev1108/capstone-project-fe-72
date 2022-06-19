@@ -46,3 +46,24 @@
     padding: 1rem 2.1rem;
   }
 }
+
+.btn-search-err {
+  @include Text(1.8rem, $fw-600, $color-white);
+  background-color: $color-primary;
+  padding: 0 4rem;
+  letter-spacing: 0;
+  border: none;
+  height: 5.5rem;
+  display: inline-block;
+  border-radius: 6px;
+
+  &:hover {
+    opacity: 0.8;
+    color: $color-white;
+    background-color: $color-primary;
+  }
+
+  @include mobile-sm {
+    padding: 1rem 2.1rem;
+  }
+}

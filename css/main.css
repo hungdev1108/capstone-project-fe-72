@@ -65,6 +65,31 @@
   }
 }
 
+.btn-search-err {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #ff6600;
+  padding: 0 4rem;
+  letter-spacing: 0;
+  border: none;
+  height: 5.5rem;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+.btn-search-err:hover {
+  opacity: 0.8;
+  color: #fff;
+  background-color: #ff6600;
+}
+
+@media (max-width: 576px) {
+  .btn-search-err {
+    padding: 1rem 2.1rem;
+  }
+}
+
 .title-primary {
   margin: 0;
   font-size: 5.4rem;
@@ -2103,7 +2128,6 @@ body {
           transform: translateX(-50%);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  display: none;
   opacity: 0;
 }
 
@@ -2129,7 +2153,6 @@ body {
 
 .ourteam__content .row .col .ourteam__content--item .team--img:hover .team--social-hover {
   opacity: 1;
-  display: inline-block;
 }
 
 .ourteam__content .row .col .ourteam__content--item a {
@@ -2140,5 +2163,91 @@ body {
   .ourteam {
     padding: 4.8rem 0;
   }
+}
+
+.pagenotfound {
+  text-align: center;
+  padding: 7.2rem 0;
+}
+
+.pagenotfound__block {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pagenotfound__block h1 {
+  font-size: 13rem;
+  font-weight: 700;
+  color: #232121;
+  letter-spacing: 5px;
+}
+
+.pagenotfound__block h2 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #232121;
+  margin-bottom: 1rem;
+}
+
+.pagenotfound__block .form {
+  max-width: 500px;
+  margin: 4.8rem auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pagenotfound__block .form .input__text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: rgba(22, 28, 45, 0.7);
+  display: block;
+  border-radius: 6px;
+  background: #f7f7f7;
+  height: 5.5rem;
+  padding: 1.2rem 12rem 1.2rem 2.5rem;
+  border: 1px solid #ced4da !important;
+}
+
+.pagenotfound__block .form .input__text:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #ff6600 !important;
+}
+
+@media (max-width: 576px) {
+  .pagenotfound__block .form .input__text {
+    padding: 1.2rem 2.5rem;
+  }
+}
+
+.pagenotfound__block .form .btn-search {
+  margin-left: 2rem;
+}
+
+.pagenotfound__block .form .btn-search h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.pagenotfound__block .backtohome {
+  margin-top: 4.8rem;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #232121;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.pagenotfound__block .backtohome i {
+  margin-right: 1rem;
+}
+
+.pagenotfound__block .backtohome:hover {
+  color: #ff6600;
 }
 /*# sourceMappingURL=main.css.map */

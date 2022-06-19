@@ -218,7 +218,7 @@
               left: 50%;
               transform: translateX(-50%);
               transition: all 0.5s ease;
-              display: none;
+              //   display: none;
               opacity: 0;
 
               span {
@@ -245,7 +245,7 @@
 
             &:hover .team--social-hover {
               opacity: 1;
-              display: inline-block;
+              //   display: inline-block;
             }
           }
 
