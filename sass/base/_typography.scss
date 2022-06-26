@@ -74,3 +74,23 @@ input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   font-family: "Quicksand", sans-serif;
 }
+
+// megre
+.dark-mode {
+  background-color: #232220 !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+.dark-modep {
+  color: #c2d0da !important ;
+}
+.dark-modeh {
+  color: #fff !important;
+}
+.active {
+  .fa-sun {
+    opacity: 1 !important;
+  }
+  .fa-moon {
+    opacity: 0 !important;
+  }
+}

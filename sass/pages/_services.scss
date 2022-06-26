@@ -1,0 +1,267 @@
+//About
+.services__about {
+  padding: 4.8rem 0;
+  .container {
+    padding: 4.8rem 1.5rem;
+    margin: 0 auto;
+    width: 100%;
+    @include desktop-xxl {
+      max-width: 1200px;
+    }
+    .services__left {
+      .services__title {
+        .services__left-title1 {
+          @include Text(20px, $fw-500, $color-primary);
+          line-height: 30px;
+          letter-spacing: 1px;
+          margin: 0;
+          padding: 0;
+          @include mobile-md {
+            font-size: 16px;
+            font-weight: $fw-400;
+          }
+        }
+        .services__left-title2 {
+          @include Text(38px, $fw-600, #232121);
+          line-height: 48px;
+          margin-bottom: 4.5rem;
+          @include desktop-xl {
+            font-size: 32px;
+            line-height: 40px;
+          }
+          @include mobile-sm {
+            font-size: 30px;
+            line-height: 38px;
+          }
+        }
+      }
+    }
+    .services__right {
+      p {
+        @include Text(18px, $fw-400, rgba(22, 28, 45, 0.7));
+        line-height: 28px;
+      }
+    }
+  }
+}
+// Home
+.services__home {
+  padding: 4.8rem 0;
+  .container {
+    padding: 4.8rem 1.5rem;
+    margin: 0 auto;
+    width: 100%;
+    @include desktop-xxl {
+      max-width: 1200px;
+    }
+    .services__item {
+      @include btn(1px solid #eee, 8px, $color-white, 4rem, 4rem);
+      position: relative;
+      transition: all 0.5s ease 0s;
+      box-shadow: 0 25px 98px 0 #00000008;
+      &:hover {
+        box-shadow: 0 25px 98px 0 #0000001a;
+      }
+      &:hover .services__box-icon {
+        background: $color-primary !important;
+        transition: 0.3s ease-in-out;
+      }
+      &:hover .services__box-icon i.fa {
+        color: $color-white;
+        transition: 0.3s ease-in-out;
+      }
+      .services__item-box {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        .services__box-icon {
+          @include avt(70px, 70px, 6px, inline-block);
+          text-align: center;
+          line-height: 70px;
+          background: rgba(130, 115, 252, 0.05);
+          transition: 0.3s ease-in-out;
+          i {
+            font-size: 25px;
+            line-height: 70px;
+            color: $color-primary;
+          }
+        }
+        .services__box-info {
+          p {
+            @include Text(18px, $fw-400, $font-color);
+            line-height: 28px;
+          }
+          h4 {
+            a {
+              text-decoration: none;
+              text-transform: capitalize;
+              @include Text(24px, $fw-600, #232121);
+              margin-bottom: 0;
+              margin-top: 5px;
+              display: block;
+              transition: all 0.3s;
+              @include desktop-xl {
+                font-size: 20px;
+              }
+              &:hover {
+                color: $color-primary;
+              }
+            }
+          }
+        }
+      }
+      p {
+        @include Text(18px, $fw-400, $font-color);
+        line-height: 28px;
+      }
+    }
+  }
+}
+//Middle
+.services__middle {
+  padding: 4.8rem 0;
+  height: 48.8rem;
+  background-image: url(../../img/banner2.jpg);
+  @include bg-img(cover, no-repeat, center);
+  position: relative;
+  z-index: 1;
+
+  @include tablet-lg {
+    height: 39.8rem;
+  }
+  @include mobile-sm {
+    height: 35.4rem;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    background-color: #100f13a8;
+    right: 0;
+    z-index: -1;
+  }
+  .container {
+    padding: 0.8rem 1.5rem 2.4rem;
+    margin: 0 auto;
+    width: 100%;
+    @include desktop-xxl {
+      max-width: 1200px;
+    }
+    .services__content {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+
+      .services__middle-title {
+        @include Text(45px, $fw-600, $color-white);
+        line-height: 55px;
+        max-width: 800px;
+        @include desktop-xl {
+          font-size: 40px;
+          max-width: 100%;
+          line-height: 50px;
+        }
+        @include mobile-sm {
+          font-size: 35px;
+          line-height: 40px;
+        }
+      }
+      .services__middle-btn {
+        padding-bottom: 4.5rem;
+        .btn-white {
+          @include btn(2px solid $color-white, 6px, transparent, 1.2rem, 4.5rem);
+          @include Text(16px, $fw-700, $color-white);
+          line-height: 30px;
+          transition: all 0.3s ease-in;
+          margin-right: 2.4rem;
+          margin-top: 4.8rem;
+          @include tablet-lg {
+            margin-right: 1.2rem;
+          }
+
+          &:hover {
+            background-color: $color-white;
+            color: $color-primary;
+          }
+        }
+        .btn-primary {
+          background-color: $color-primary;
+          border: 2px solid $color-primary;
+          &:hover {
+            color: $color-white;
+            background-color: $color-primary;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}
+//Menu
+.services__menu {
+  padding: 4.8rem 0;
+  .container {
+    padding: 4.8rem 1.5rem;
+    margin: 0 auto;
+    width: 100%;
+    @include desktop-xxl {
+      max-width: 1200px;
+    }
+    .services__header {
+      text-align: center;
+      .services__header-title1 {
+        @include Text(20px, $fw-400, $color-primary);
+        line-height: 30px;
+        letter-spacing: 1px;
+        display: block;
+      }
+      .services__header-title2 {
+        @include Text(38px, $fw-600, #232121);
+        line-height: 48px;
+        margin-bottom: 4.5rem;
+      }
+    }
+    .services__menu-row {
+      margin: 0 -15px;
+      .services__menu-section {
+        padding: 0 48px 0 15px;
+        @include tablet-lg {
+          padding: 0 15px;
+        }
+        .services__menu-item {
+          .mb4 {
+            margin-bottom: 24px;
+            .row {
+              padding-bottom: 1rem;
+              border-bottom: 2px dotted #bbb;
+              .menu-item-name {
+                position: relative;
+                h4 {
+                  @include Text(20px, $fw-600, #232121);
+                }
+              }
+              .menu-item-price {
+                text-align: right;
+
+                position: relative;
+                h5 {
+                  @include Text(20.8px, $fw-600, $color-primary);
+                  line-height: 1.2;
+                }
+              }
+            }
+            .menu-item-description {
+              p {
+                margin-top: 10px;
+                @include Text(18px, $fw-400, $font-color);
+                line-height: 28px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

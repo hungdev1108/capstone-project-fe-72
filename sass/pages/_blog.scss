@@ -1,0 +1,289 @@
+.blog {
+  background-color: #f7f7f7;
+  padding: 4.8rem 0;
+  .container {
+    padding: 4.8rem 1.5rem;
+    margin: 0 auto;
+    width: 100%;
+    @include desktop-xxl {
+      max-width: 1200px;
+    }
+    .blog__header {
+      text-align: center;
+      .blog__header-title1 {
+        @include Text(20px, $fw-400, $color-primary);
+        line-height: 30px;
+        letter-spacing: 1px;
+        display: block;
+        margin: 0;
+      }
+      .blog__header-title2 {
+        @include Text(38px, $fw-600, #232121);
+        line-height: 48px;
+        margin-bottom: 4.8rem;
+      }
+    }
+    .blog__body {
+      .blog__post-left {
+        padding: 0 15px;
+        max-width: 100%;
+        position: relative;
+
+        .blog__left {
+          @include mobile-sm {
+            padding: 0;
+          }
+          .blog__item {
+            position: relative;
+            padding: 0 15px;
+            max-width: 100%;
+
+            @include mobile-sm {
+              padding: 0;
+            }
+            .blog__card {
+              position: relative;
+              word-wrap: break-word;
+              background-color: transparent;
+              background-clip: border-box;
+              border: none;
+              border-radius: 0;
+              .blog__card-top {
+                position: relative;
+                border: none;
+                border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+                a {
+                  .card-img {
+                    border-radius: 6px;
+                    width: 100%;
+                    flex-shrink: 0;
+                  }
+                }
+                .card__top-post {
+                  position: absolute;
+                  bottom: 10px;
+                  left: 10px;
+                  .reciepe {
+                    @include btn(none, 35px, $color-primary, 0.3rem, 2rem);
+                    @include Text(12px, $fw-700, $color-white);
+                    margin-bottom: 5px;
+                    display: inline-block;
+                    letter-spacing: 0.05em;
+                    text-decoration: none;
+                  }
+                  .meta-info {
+                    opacity: 1;
+                    color: #fff;
+                    margin-left: 10px;
+                    font-size: 15px;
+                    letter-spacing: 0.02em;
+                  }
+                }
+              }
+              .blog__card-bottom {
+                padding: 0;
+                .blog-desc {
+                  @include Text(24px, $fw-600, #232121);
+                  line-height: 34px;
+                  display: block;
+                  margin-top: 25px;
+                  margin-bottom: 15px;
+                  text-decoration: none;
+                }
+                p {
+                  @include Text(18px, $fw-400, $font-color);
+                  padding: 0;
+                  margin: 0;
+                  line-height: 28px;
+                }
+                .blog__bottom-footer {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  .footer-meta {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .meta-img {
+                      font-weight: $fw-700;
+                      color: #232121;
+                      letter-spacing: 0.02em;
+                      padding: 0;
+                      img {
+                        @include avt(40px, 40px, 50%, block);
+                        overflow: hidden;
+                        max-width: 100%;
+                      }
+                    }
+                    a {
+                      text-decoration: none;
+                      @include Text(16px, $fw-700, #232121);
+                      letter-spacing: 0.02em;
+                      padding: 0 0.5rem;
+                    }
+                  }
+                  .read {
+                    @include Text(16px, $fw-700, #232121);
+                    text-transform: capitalize;
+                    letter-spacing: 0.02em;
+                    opacity: 0.9;
+                    text-decoration: none;
+                    transition: all 0.3s;
+                    &:hover {
+                      color: $color-primary;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .blog__pagination {
+            margin-top: 4.5rem;
+
+            text-align: center;
+            .blog__paganation-page {
+              padding: 0;
+              margin: 0;
+              list-style: none;
+              li {
+                display: inline-block;
+                margin-right: 5px;
+                .page__number {
+                  display: block;
+                  @include btn(1px solid #eee, 6px, #f7f7f7, 0.8rem, 1.6rem);
+                  @include Text(16px, $fw-700, $font-color);
+                  transition: background-color 0.15s linear, color 0.15s linear;
+                  box-shadow: 0 25px 98px 0 #13131308;
+                  text-decoration: none;
+                  &:hover {
+                    color: $color-primary;
+                    border: 1px solid $color-primary;
+                  }
+                }
+                .current {
+                  display: block;
+                  @include btn(
+                    1px solid $color-primary,
+                    6px,
+                    $color-primary,
+                    0.8rem,
+                    1.6rem
+                  );
+                  @include Text(16px, $fw-700, $color-white);
+                  transition: background-color 0.15s linear, color 0.15s linear;
+                  box-shadow: 0 25px 98px 0 #13131308;
+                }
+              }
+            }
+          }
+        }
+      }
+      .blog__post-right {
+        padding-left: 4.8rem;
+        padding-right: 1.5rem;
+        @include tablet-lg {
+          padding: 0 1.5rem;
+        }
+        .blog__sideBar-widget {
+          margin-bottom: 40px;
+          padding: 30px 25px;
+          background: $color-white;
+          border-radius: 6px;
+          .sideBar__title {
+            margin-bottom: 2.4rem;
+            h3 {
+              margin: 0;
+              @include Text(26px, $fw-600, #232121);
+            }
+          }
+          .sideBar__recipe {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            .blog-post-thumb {
+              margin: 0 0 1.6rem;
+              .img-radius {
+                border-radius: 6px;
+              }
+              .blog-title {
+                a {
+                  text-decoration: none;
+                  @include Text(17px, $fw-700, #232121);
+                  line-height: 22px;
+                  margin-top: 10px;
+                  display: block;
+                }
+              }
+            }
+          }
+          .sideBar__post {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            grid-gap: 15px;
+            margin-bottom: 15px;
+            align-items: center;
+            .img-radius {
+              border-radius: 6px;
+            }
+            .blog-title {
+              a {
+                text-decoration: none;
+                @include Text(20px, $fw-700, #232121);
+                line-height: 28px;
+                margin-bottom: 10px;
+                display: block;
+              }
+              .pos-info {
+                @include Text(16px, $fw-400, $font-color);
+                line-height: 1.5;
+                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+              }
+            }
+          }
+        }
+      }
+      .sideBar__category {
+        .blog__cat {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          li {
+            color: $font-color;
+            a {
+              @include Text(19px, $fw-500, $font-color);
+              display: block;
+              padding: 10px 15px 10px 20px;
+              position: relative;
+              text-decoration: none;
+              transition: all 0.3s;
+              &::before {
+                display: inline-block;
+
+                font-family: "FontAwesome";
+                content: "";
+                width: 8px;
+                height: 8px;
+                background-color: $font-color;
+                position: absolute;
+                top: 20px;
+                left: 0px;
+                border: 1px solid $color-grey-2;
+                opacity: 0.3;
+              }
+              &:hover::before {
+                opacity: 1;
+              }
+              &:hover {
+                color: $color-primary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sideBar__title {
+    margin: 0 0 2.4rem;
+    @include Text(26px, $fw-600, #232121);
+  }
+}
