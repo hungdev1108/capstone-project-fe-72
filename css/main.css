@@ -233,6 +233,34 @@
   }
 }
 
+/* Back to top  */
+.backtotop {
+  position: fixed;
+  bottom: 4.2rem;
+  right: 2rem;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  background-color: #ff6600;
+  border-radius: 50%;
+  display: none;
+  z-index: 8888;
+}
+
+.backtotop a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+  display: block;
+}
+
+@media (max-width: 576px) {
+  .backtotop a {
+    font-size: 1.6rem;
+  }
+}
+
 body {
   font-family: sans-serif;
   font-size: 1.6rem;
@@ -371,7 +399,7 @@ body {
 }
 
 .banner-home .header .navbar__right--search .search__input {
-  padding: 10px 50px 10px 20px;
+  padding: 1rem 5rem 1rem 2rem;
   font-size: 1.6rem;
   font-weight: 400;
   color: rgba(22, 28, 45, 0.7);
@@ -405,7 +433,7 @@ body {
 
 .banner-home .header .navbar__right--darkmode {
   display: block;
-  padding: 0 20px;
+  padding: 0 2rem;
   font-size: 2.5rem;
   font-weight: "";
   color: #fff;
@@ -918,6 +946,145 @@ body {
   color: #ff6600;
 }
 
+.menu__overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(6, 3, 0, 0.77);
+  z-index: 9999;
+  display: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.menu__overlay .btn__close {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  background: #ff6600;
+  color: #fff;
+  border-radius: 6px;
+  top: 4rem;
+  right: 4rem;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 576px) {
+  .menu__overlay .btn__close {
+    top: 5rem;
+    right: 1.5rem;
+  }
+}
+
+.menu__overlay .nav__showmenu {
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.menu__overlay .nav__showmenu ul {
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+.menu__overlay .nav__showmenu ul li {
+  margin-bottom: 2rem;
+}
+
+.menu__overlay .nav__showmenu ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  display: block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.menu__overlay .nav__showmenu ul li a:hover {
+  color: #ff6600;
+}
+
+@media (max-width: 576px) {
+  .menu__overlay .nav__showmenu ul li a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu__overlay .nav__showmenu ul li {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.menubar__right {
+  position: fixed;
+  height: 100%;
+  z-index: 7777;
+  right: 0;
+  top: 6rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.menubar__right .menubar--list {
+  padding: 2rem 0.5rem 4rem 0.5rem;
+  background: #0d1326;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  width: 9rem;
+}
+
+.menubar__right .menubar--list .pull-right {
+  text-align: center;
+}
+
+.menubar__right .menubar--list .pull-right span a {
+  display: inline-block;
+  border-bottom: 1px solid #41414d;
+  width: 100%;
+  color: #e6ebff;
+  opacity: 0.6;
+}
+
+.menubar__right .menubar--list .pull-right span a i {
+  padding-bottom: 2.5rem;
+}
+
+.menubar__right .menubar--list .pull-right span a:hover {
+  opacity: 1;
+}
+
+.menubar__right .menubar--list .menu--item {
+  text-align: center;
+}
+
+.menubar__right .menubar--list .menu--item a {
+  opacity: 0.6;
+  display: block;
+  margin: 2.5rem 0;
+  color: #e6ebff;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+
+.menubar__right .menubar--list .menu--item a span {
+  display: block;
+}
+
+.menubar__right .menubar--list .menu--item a:hover {
+  opacity: 1;
+}
+
 .aboutUs {
   padding: 4.8rem 0;
 }
@@ -970,6 +1137,18 @@ body {
   .aboutUs {
     padding: 0;
   }
+}
+
+.aboutUs-darkmode {
+  background-color: #232220;
+}
+
+.aboutUs-darkmode h3 {
+  color: #eee !important;
+}
+
+.aboutUs-darkmode p {
+  color: #c2d0da !important;
 }
 
 .booking {
@@ -2180,6 +2359,22 @@ body {
   font-weight: 700;
   color: #232121;
   letter-spacing: 5px;
+}
+
+.pagenotfound__block h1 span {
+  font-size: 12rem;
+}
+
+@media (max-width: 768px) {
+  .pagenotfound__block h1 span {
+    font-size: 12rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .pagenotfound__block h1 span {
+    font-size: 12rem;
+  }
 }
 
 .pagenotfound__block h2 {

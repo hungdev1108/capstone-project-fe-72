@@ -1,0 +1,62 @@
+.menu__overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(6, 3, 0, 0.77);
+  z-index: 9999;
+  display: none;
+  transition: all 0.5s;
+
+  .btn__close {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    background: $color-primary;
+    color: $color-white;
+    border-radius: 6px;
+    top: 4rem;
+    right: 4rem;
+    font-size: 1.6rem;
+
+    @include mobile-sm {
+      top: 5rem;
+      right: 1.5rem;
+    }
+  }
+
+  .nav__showmenu {
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    ul {
+      padding: 0;
+      list-style: none;
+      display: inline-block;
+      li {
+        margin-bottom: 2rem;
+        a {
+          text-decoration: none;
+          @include Text(2rem, $fw-600, $color-white);
+          display: block;
+          transition: all 0.3s;
+          &:hover {
+            color: $color-primary;
+          }
+
+          @include mobile-sm {
+            @include Text(1.6rem, $fw-600, $color-white);
+          }
+        }
+
+        @include mobile-sm {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+}

@@ -41,6 +41,17 @@
   }
 }
 
+//aboutUs-darkmode
+.aboutUs-darkmode {
+  background-color: #232220;
+  h3 {
+    color: #eee !important;
+  }
+  p {
+    color: #c2d0da !important;
+  }
+}
+
 // booking
 .booking {
   background-color: $color-primary;

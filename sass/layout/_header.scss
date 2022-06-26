@@ -19,7 +19,7 @@
         &--search {
           position: relative;
           .search__input {
-            padding: 10px 50px 10px 20px;
+            padding: 1rem 5rem 1rem 2rem;
             @include Text(1.6rem, $fw-400, $font-color);
             border-radius: 6px;
             ::-webkit-input-placeholder {
@@ -45,7 +45,7 @@
         }
         &--darkmode {
           display: block;
-          padding: 0 20px;
+          padding: 0 2rem;
           @include Text(2.5rem, "", $color-white);
         }
         &--menubar {

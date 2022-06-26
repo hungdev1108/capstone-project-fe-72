@@ -64,7 +64,7 @@
         <header class="header">
           <nav class="navbar">
             <div class="navbar__left">
-              <a class="navbar-brand" href="#">Diner</a>
+              <a class="navbar-brand" href="./home.html">Diner</a>
             </div>
             <div class="navbar__right d-flex align-items-center">
               <div class="navbar__right--search">
@@ -77,12 +77,12 @@
                   <i class="fa fa-search search__icon"></i>
                 </a>
               </div>
-              <div class="navbar__right--darkmode">
+              <div onclick="darkmode();" class="navbar__right--darkmode">
                 <span>
-                  <i class="fa-solid fa-moon"></i>
+                  <i id="darkLight" class="fa-solid fa-moon"></i>
                 </span>
               </div>
-              <div class="navbar__right--menubar">
+              <div id="btn__open" onclick="showMenu();" class="navbar__right--menubar">
                 <i class="fa-solid fa-bars"></i>
               </div>
             </div>
@@ -109,6 +109,62 @@
         </div>
       </div>
     </section>
+
+    <!-- Menu right sticky -->
+    <div class="menubar__right">
+      <div class="menubar--list">
+        <div class="pull-right">
+          <span>
+            <a href="">
+              <i class="fa-solid fa-angles-right"></i>
+            </a>
+          </span>
+        </div>
+        <div class="menu--item">
+          <a href="">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Back</span>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-download"></i>
+            <span>Download</span>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Buy</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Menu right sticky -->
+
+    <!-- Show/hide Menu Click -->
+    <div id="menu__overlay" class="menu__overlay">
+      <div class="menu__overlay--btn">
+        <button id="btn__close" class="btn btn__close" onclick="closeMenu();">
+          <i class="fa fa-times"></i>
+        </button>
+        <nav class="nav__showmenu">
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./blog">Blog</a></li>
+            <li><a href="./404.html">404</a></li>
+            <li><a href="./landingpage.html">Landing Page</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li>
+              <a
+                href="https://demo.w3layouts.com/demos_new/template_demo/01-02-2021/diner-liberty-demo_Free/668605264/web/elements.html"
+                >Shot Codes</a
+              >
+            </li>
+            <li><a href="">Email</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Show/hide Menu Click-->
 
     <!-- About us  -->
     <section class="aboutUs">
@@ -837,6 +893,12 @@
         </div>
       </div>
     </footer>
+
+    <!-- Back to top  -->
+    <div class="backtotop" onclick="topFunction()" id="back-to-top">
+      <a href="#">⤴</a>
+      <!-- <a href="#"><i class="fa fa-arrow-up"></i></a> -->
+    </div>
 
     <!-- Bootstrap -->
     <script

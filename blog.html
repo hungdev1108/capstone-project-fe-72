@@ -62,7 +62,7 @@
                   <i class="fa-solid fa-moon"></i>
                 </span>
               </div>
-              <div class="navbar__right--menubar">
+              <div id="btn__open" onclick="showMenu();" class="navbar__right--menubar">
                 <i class="fa-solid fa-bars"></i>
               </div>
             </div>
@@ -79,6 +79,34 @@
         </header>
       </div>
     </section>
+
+    <!-- Show Menu -->
+    <div id="menu__overlay" class="menu__overlay">
+      <div class="menu__overlay--btn">
+        <button id="btn__close" class="btn btn__close" onclick="closeMenu();">
+          <i class="fa fa-times"></i>
+        </button>
+        <nav class="nav__showmenu">
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./blog">Blog</a></li>
+            <li><a href="./404.html">404</a></li>
+            <li><a href="./landingpage.html">Landing Page</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li>
+              <a
+                href="https://demo.w3layouts.com/demos_new/template_demo/01-02-2021/diner-liberty-demo_Free/668605264/web/elements.html"
+                >Shot Codes</a
+              >
+            </li>
+            <li><a href="">Email</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Show Menu -->
 
     <!-- Footer -->
     <footer class="footer">

@@ -7,6 +7,16 @@
     h1 {
       @include Text(13rem, $fw-700, $color-black-3);
       letter-spacing: 5px;
+
+      span {
+        font-size: 12rem;
+        @include mobile-md {
+          font-size: 12rem;
+        }
+        @include mobile-sm {
+          font-size: 12rem;
+        }
+      }
     }
     h2 {
       @include Text(2.8rem, $fw-600, $color-black-3);

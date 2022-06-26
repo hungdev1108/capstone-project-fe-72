@@ -56,3 +56,58 @@ $(".owl-carousel").owlCarousel({
     },
   },
 });
+
+// Show and hide menu
+function showMenu() {
+  var test = document.querySelector(".menu__overlay");
+  if ((test.style.display = "none")) {
+    test.style.display = "block";
+  }
+}
+
+function closeMenu() {
+  var test = document.querySelector(".menu__overlay");
+  if ((test.style.display = "block")) {
+    test.style.display = "none";
+  }
+}
+
+// backToTop hide and show (Tham khao W3School)
+var backToTop = document.getElementById("back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+// Function scrollFunction handle
+function scrollFunction() {
+  if (document.documentElement.scrollTop > 100) {
+    backToTop.style.display = "block";
+  } else {
+    backToTop.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+// Darkmod test
+function darkmode() {
+  var navBarIcon = document.querySelector("#darkLight");
+  if (navBarIcon.className == "fa-solid fa-moon") {
+    navBarIcon.className = "fa-solid fa-sun";
+  } else {
+    navBarIcon.className = "fa-solid fa-moon";
+  }
+
+  var aboutUs = document.querySelector(".aboutUs");
+  if (aboutUs.className == "aboutUs") {
+    aboutUs.classList.add("aboutUs-darkmode");
+  } else {
+    aboutUs.classList.remove("aboutUs-darkmode");
+  }
+}

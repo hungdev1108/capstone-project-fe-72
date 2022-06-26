@@ -1,0 +1,56 @@
+.menubar__right {
+  position: fixed;
+  height: 100%;
+  z-index: 7777;
+  right: 0;
+  top: 6rem;
+  transition: all 0.5s;
+
+  .menubar--list {
+    padding: 2rem 0.5rem 4rem 0.5rem;
+    background: #0d1326;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    width: 9rem;
+
+    .pull-right {
+      text-align: center;
+      span {
+        a {
+          display: inline-block;
+          border-bottom: 1px solid #41414d;
+          width: 100%;
+          color: #e6ebff;
+          opacity: 0.6;
+          i {
+            padding-bottom: 2.5rem;
+          }
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .menu--item {
+      text-align: center;
+      a {
+        opacity: 0.6;
+        display: block;
+        margin: 2.5rem 0;
+        color: #e6ebff;
+        font-size: 1.6rem;
+        text-decoration: none;
+
+        span {
+          display: block;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
