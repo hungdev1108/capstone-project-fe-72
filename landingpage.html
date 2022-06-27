@@ -4,9 +4,1109 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home - Diner</title>
+    <!-- Quick-sand Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Pacifico Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- Swiper library link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- OwlCarousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="./js/magnific-popup.css" />
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- Css link -->
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    HUNG
+    <!-- Banner Home -->
+    <section class="banner-home">
+      <div class="container">
+        <!-- Header -->
+        <header class="header">
+          <nav class="navbar">
+            <div class="navbar__left">
+              <a class="navbar-brand" href="./home.html">Diner</a>
+            </div>
+            <div class="navbar__right d-flex align-items-center">
+              <div class="navbar__right--search">
+                <input
+                  class="search__input form-control"
+                  type="search"
+                  placeholder="Search here..."
+                />
+                <a href="">
+                  <i class="fa fa-search search__icon"></i>
+                </a>
+              </div>
+              <div onclick="darkmode();" class="navbar__right--darkmode">
+                <span>
+                  <i id="darkLight" class="fa-solid fa-moon"></i>
+                </span>
+              </div>
+              <div id="btn__open" onclick="showMenu();" class="navbar__right--menubar">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
+          </nav>
+        </header>
+
+        <!-- Banner-info -->
+        <div class="banner__info">
+          <div class="banner__info--caption">
+            <h1 class="title-primary">The only thing we love more than food is you!</h1>
+          </div>
+          <div class="banner__info--desc">
+            <p class="text-content-white">
+              Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea
+              ipsum sed consequuntur illum facere.
+            </p>
+          </div>
+          <div class="banner__info--button">
+            <a href="#" class="btn btn-banner btn--white">
+              Read More
+              <i class="fa fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu right sticky -->
+    <div class="menubar__right">
+      <div class="menubar--list">
+        <div class="pull-right">
+          <span>
+            <a href="">
+              <i class="fa-solid fa-angles-right"></i>
+            </a>
+          </span>
+        </div>
+        <div class="menu--item">
+          <a href="">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Back</span>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-download"></i>
+            <span>Download</span>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Buy</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Menu right sticky -->
+
+    <!-- Show/hide Menu Click -->
+    <div id="menu__overlay" class="menu__overlay">
+      <div class="menu__overlay--btn">
+        <button id="btn__close" class="btn btn__close" onclick="closeMenu();">
+          <i class="fa fa-times"></i>
+        </button>
+        <nav class="nav__showmenu">
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./404.html">404</a></li>
+            <li><a href="./landingpage.html">Landing Page</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li>
+              <a
+                href="https://demo.w3layouts.com/demos_new/template_demo/01-02-2021/diner-liberty-demo_Free/668605264/web/elements.html"
+                >Shot Codes</a
+              >
+            </li>
+            <li><a href="">Email</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- Show/hide Menu Click-->
+
+    <!-- About us  -->
+    <section class="aboutUs">
+      <div class="container">
+        <div class="row">
+          <div class="col col-12 col-lg-5 col-md-12">
+            <div class="aboutUs__left">
+              <h6 class="title-section">About Us</h6>
+              <h3 class="title-secondary">
+                We found our creative space that is open for you.
+              </h3>
+            </div>
+          </div>
+          <div class="col col-12 col-lg-7 col-md-12">
+            <div class="aboutUs__right">
+              <p class="text-content">
+                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in
+                ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae,
+                fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init dolor sit,
+                amet elit. Dolor ipsum non velit, culpa!Lorem ipsum init dolor sit.
+              </p>
+              <p class="text-content">
+                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in
+                ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae,
+                fugiat nihil ad. Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="booking">
+      <div class="container-fuild">
+        <div class="row">
+          <div class="col col-12 col-lg-6">
+            <div class="booking__left">
+              <div class="booking__left--img"></div>
+            </div>
+          </div>
+          <div class="col col-12 col-lg-6">
+            <div class="booking__right">
+              <div class="booking__right--info">
+                <h6 class="title-section">More than 3000 Restaurants</h6>
+                <h3 class="title-secondary">Book a table easly at the best price</h3>
+                <p class="text-content">
+                  Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales
+                  quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et
+                  libero ut justo ultrices in.
+                </p>
+                <div class="info--reviews">
+                  <div class="row">
+                    <div class="col col-6">
+                      <div class="review-item">
+                        <span>
+                          <i class="fa fa-thumbs-up"></i>
+                        </span>
+                        <a href="">Best Deals</a>
+                        <p class="text-content">
+                          Lorem ipsum viverra feugiat. Pellen tesque libero justo.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col col-6">
+                      <div class="review-item">
+                        <span>
+                          <i class="fa fa-cutlery"></i>
+                        </span>
+                        <a href="">Best Food</a>
+                        <p class="text-content">
+                          Lorem ipsum viverra feugiat. Pellen tesque libero justo.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Ourteam -->
+    <section class="ourteam">
+      <div class="container">
+        <div class="ourteam__title">
+          <h6 class="title-section">Our team</h6>
+          <h3 class="title-secondary">Meet Our Chefs</h3>
+        </div>
+        <div class="ourteam__content">
+          <div class="row">
+            <div class="col col-6 col-md-6 col-lg-4">
+              <div class="ourteam__content--item">
+                <div class="team--img">
+                  <img src="./img/chef2.jpg" alt="" />
+                  <div class="team--social-hover">
+                    <span>
+                      <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </span>
+                    <span>
+                      <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </span>
+                    <span>
+                      <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+
+                <a href="" class="text-team">Daniel jacobs</a>
+                <p class="text-content">Chef</p>
+              </div>
+            </div>
+            <div class="col col-6 col-md-6 col-lg-4">
+              <div class="ourteam__content--item">
+                <div class="team--img">
+                  <img src="./img/chef1.jpg" alt="" />
+                  <div class="team--social-hover">
+                    <span>
+                      <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </span>
+                    <span>
+                      <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </span>
+                    <span>
+                      <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+                <a href="" class="text-team">Claire Daniel</a>
+                <p class="text-content">Chef</p>
+              </div>
+            </div>
+            <div class="col col-6 col-md-6 col-lg-4">
+              <div class="ourteam__content--item">
+                <div class="team--img">
+                  <img src="./img/chef2.jpg" alt="" />
+                  <div class="team--social-hover">
+                    <span>
+                      <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </span>
+                    <span>
+                      <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+                    </span>
+                    <span>
+                      <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+                <a href="" class="text-team">Daniel Hunt</a>
+                <p class="text-content">Chef</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+      <div class="container">
+        <div class="categories__title">
+          <h6 class="title-section">What's New</h6>
+          <h3 class="title-secondary">Popular Categories</h3>
+        </div>
+        <div class="categories__content">
+          <div class="row">
+            <div class="col col-lg-4 col-6">
+              <div class="item">
+                <div class="item__image">
+                  <img src="./img/g1.jpg" alt="" />
+                </div>
+                <div class="item__info">
+                  <h4 class="text-content">Vegetarian</h4>
+                  <h6>
+                    <span>350$</span>
+                  </h6>
+                </div>
+                <div class="item__layer"></div>
+              </div>
+            </div>
+
+            <div class="col col-lg-4 col-6">
+              <div class="item">
+                <div class="item__image">
+                  <img src="./img/g2.jpg" alt="" />
+                </div>
+                <div class="item__info">
+                  <h4 class="text-content">Drinks</h4>
+                  <h6>
+                    <span>550$</span>
+                  </h6>
+                </div>
+                <div class="item__layer"></div>
+              </div>
+            </div>
+
+            <div class="col col-lg-4 col-6">
+              <div class="item">
+                <div class="item__image">
+                  <img src="./img/g3.jpg" alt="" />
+                </div>
+                <div class="item__info">
+                  <h4 class="text-content">Lunch</h4>
+                  <h6>
+                    <span>650$</span>
+                  </h6>
+                </div>
+                <div class="item__layer"></div>
+              </div>
+            </div>
+
+            <div class="col col-lg-4 col-6">
+              <div class="item">
+                <div class="item__image">
+                  <img src="./img/g4.jpg" alt="" />
+                </div>
+                <div class="item__info">
+                  <h4 class="text-content">Bakery</h4>
+                  <h6>
+                    <span>550$</span>
+                  </h6>
+                </div>
+                <div class="item__layer"></div>
+              </div>
+            </div>
+
+            <div class="col col-lg-4 col-6">
+              <div class="item">
+                <div class="item__image">
+                  <img src="./img/g5.jpg" alt="" />
+                </div>
+                <div class="item__info">
+                  <h4 class="text-content">Desserts</h4>
+                  <h6>
+                    <span>750$</span>
+                  </h6>
+                </div>
+                <div class="item__layer"></div>
+              </div>
+            </div>
+
+            <div class="col col-lg-4 col-6">
+              <div class="item">
+                <div class="item__image">
+                  <img src="./img/g6.jpg" alt="" />
+                </div>
+                <div class="item__info">
+                  <h4 class="text-content">Pizza</h4>
+                  <h6>
+                    <span>850$</span>
+                  </h6>
+                </div>
+                <div class="item__layer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+      <div class="container">
+        <div class="services__content">
+          <div class="row">
+            <div class="col col-12 col-md-6 col-lg-4">
+              <div class="item">
+                <div class="item__service">
+                  <div class="item__service--top">
+                    <div class="icon">
+                      <span>
+                        <i class="fa fa-users"></i>
+                      </span>
+                    </div>
+                    <div class="info">
+                      <p class="text-content">01</p>
+                      <a href="" class="text-link">Soup</a>
+                    </div>
+                  </div>
+                  <div class="item__service--bottom">
+                    <p class="text-content">
+                      Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                      vitae sit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-12 col-md-6 col-lg-4">
+              <div class="item">
+                <div class="item__service">
+                  <div class="item__service--top">
+                    <div class="icon">
+                      <span>
+                        <i class="fa fa-shield"></i>
+                      </span>
+                    </div>
+                    <div class="info">
+                      <p class="text-content">02</p>
+                      <a href="" class="text-link">Drinks</a>
+                    </div>
+                  </div>
+                  <div class="item__service--bottom">
+                    <p class="text-content">
+                      Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                      vitae sit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-12 col-md-6 col-lg-4">
+              <div class="item">
+                <div class="item__service">
+                  <div class="item__service--top">
+                    <div class="icon">
+                      <span>
+                        <i class="fa fa-thermometer-full"></i>
+                      </span>
+                    </div>
+                    <div class="info">
+                      <p class="text-content">03</p>
+                      <a href="" class="text-link">Pizza</a>
+                    </div>
+                  </div>
+                  <div class="item__service--bottom">
+                    <p class="text-content">
+                      Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                      vitae sit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-12 col-md-6 col-lg-4">
+              <div class="item">
+                <div class="item__service">
+                  <div class="item__service--top">
+                    <div class="icon">
+                      <span>
+                        <i class="fa fa-american-sign-language-interpreting"></i>
+                      </span>
+                    </div>
+                    <div class="info">
+                      <p class="text-content">04</p>
+                      <a href="" class="text-link">Breakfast</a>
+                    </div>
+                  </div>
+                  <div class="item__service--bottom">
+                    <p class="text-content">
+                      Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                      vitae sit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-12 col-md-6 col-lg-4">
+              <div class="item">
+                <div class="item__service">
+                  <div class="item__service--top">
+                    <div class="icon">
+                      <span>
+                        <i class="fa fa-paint-brush"></i>
+                      </span>
+                    </div>
+                    <div class="info">
+                      <p class="text-content">05</p>
+                      <a href="" class="text-link">Lunch</a>
+                    </div>
+                  </div>
+                  <div class="item__service--bottom">
+                    <p class="text-content">
+                      Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                      vitae sit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-12 col-md-6 col-lg-4">
+              <div class="item">
+                <div class="item__service">
+                  <div class="item__service--top">
+                    <div class="icon">
+                      <span>
+                        <i class="fa fa-eraser"></i>
+                      </span>
+                    </div>
+                    <div class="info">
+                      <p class="text-content">06</p>
+                      <a href="" class="text-link">Dinner</a>
+                    </div>
+                  </div>
+                  <div class="item__service--bottom">
+                    <p class="text-content">
+                      Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                      vitae sit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Welcome - Stats -->
+    <section class="welcome-bg">
+      <div class="container">
+        <div class="welcome__box">
+          <h3>Deliciousness jumping into the mouth.</h3>
+          <div class="welcome__action">
+            <div class="welcome__action--button">
+              <a href="#" class="btn btn-welcome btn--white">
+                Read More
+                <i class="fa fa-chevron-right"></i>
+              </a>
+            </div>
+            <div class="welcome__action--button">
+              <a href="#" class="btn btn-welcome btn--orange">
+                Contact Us
+                <i class="fa fa-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+      <div class="stats__content">
+        <div class="container">
+          <div class="row">
+            <div class="col col-sm-6 col-md-3 col-lg-3">
+              <div class="item__stats">
+                <span>
+                  <i class="fa fa-building"></i>
+                </span>
+                <div class="counter">
+                  <h4 class="counter-num">15,100</h4>
+                </div>
+                <p class="text-content">Branches</p>
+              </div>
+            </div>
+
+            <div class="col col-sm-6 col-md-3 col-lg-3">
+              <div class="item__stats">
+                <span>
+                  <i class="fa fa-cutlery"></i>
+                </span>
+                <div class="counter">
+                  <h4 class="counter-num">19,256</h4>
+                </div>
+                <p class="text-content">Food Items</p>
+              </div>
+            </div>
+
+            <div class="col col-sm-6 col-md-3 col-lg-3">
+              <div class="item__stats">
+                <span>
+                  <i class="fa fa-users"></i>
+                </span>
+                <div class="counter">
+                  <h4 class="counter-num">12,100</h4>
+                </div>
+                <p class="text-content">Chefs</p>
+              </div>
+            </div>
+
+            <div class="col col-sm-6 col-md-3 col-lg-3">
+              <div class="item__stats">
+                <span>
+                  <i class="fa fa-smile"></i>
+                </span>
+                <div class="counter">
+                  <h4 class="counter-num">2,560</h4>
+                </div>
+                <p class="text-content">Happy Customers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- videointro -->
+    <section class="videoIntro">
+      <div class="container">
+        <div class="videoIntro__content">
+          <div class="videoIntro__play">
+            <a href="https://player.vimeo.com/video/305185528" class="videoplay">
+              <span>
+                <i class="fa fa-play"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <!-- <div class="videoIntro__video hide-video">
+          <iframe
+            src="https://player.vimeo.com/video/305185528"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen=""
+          ></iframe>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="blog">
+      <div class="blog__title">
+        <h6 class="title-section">Latest Posts</h6>
+        <h3 class="title-secondary">Blog Posts</h3>
+      </div>
+      <div class="blog__content">
+        <div class="container">
+          <div class="row">
+            <div class="col col-12 col-md-6 col-lg-4">
+              <div class="item">
+                <div class="item__blog--header">
+                  <a href="" class="img--blog">
+                    <img src="./img/banner1.jpg" alt="" />
+                  </a>
+                  <div class="img--detail">
+                    <a href="">Reciepe</a>
+                    <span>
+                      <i class="fa fa-clock"></i>
+                      10 Min Cook
+                    </span>
+                  </div>
+                </div>
+
+                <div class="item__blog--body">
+                  <a href="" class="desc--blog"
+                    >The Best Cookie Recipes To Bake This Weekend
+                  </a>
+                  <p class="text-content">
+                    Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae
+                    sit.
+                  </p>
+                </div>
+
+                <div class="item__blog--footer">
+                  <div class="anchor--blog">
+                    <a href="" class="anchor--img">
+                      <img src="./img/team1.jpg" alt="" />
+                    </a>
+                    <a href="" class="anchor--name">Rashed Kabir</a>
+                  </div>
+                  <a href="" class="read--blog">
+                    Read More <i class="fa fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-12 col-md-6 col-lg-4">
+              <div class="item">
+                <div class="item__blog--header">
+                  <a href="" class="img--blog">
+                    <img src="./img/banner3.jpg" alt="" />
+                  </a>
+                  <div class="img--detail">
+                    <a href="">Soup</a>
+                    <span>
+                      <i class="fa fa-clock"></i>
+                      10 Min Cook
+                    </span>
+                  </div>
+                </div>
+
+                <div class="item__blog--body">
+                  <a href="" class="desc--blog"
+                    >The Best Cookie Recipes To Bake This Weekend
+                  </a>
+                  <p class="text-content">
+                    Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae
+                    sit.
+                  </p>
+                </div>
+
+                <div class="item__blog--footer">
+                  <div class="anchor--blog">
+                    <a href="" class="anchor--img">
+                      <img src="./img/team2.jpg" alt="" />
+                    </a>
+                    <a href="" class="anchor--name"> Jannatul Ferdous</a>
+                  </div>
+                  <a href="" class="read--blog">
+                    Read More <i class="fa fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-12 col-md-6 col-lg-4">
+              <div class="item">
+                <div class="item__blog--header">
+                  <a href="" class="img--blog">
+                    <img src="./img/banner1.jpg" alt="" />
+                  </a>
+                  <div class="img--detail">
+                    <a href="">Drinks</a>
+                    <span>
+                      <i class="fa fa-clock"></i>
+                      10 Min Cook
+                    </span>
+                  </div>
+                </div>
+
+                <div class="item__blog--body">
+                  <a href="" class="desc--blog"
+                    >The Best Cookie Recipes To Bake This Weekend
+                  </a>
+                  <p class="text-content">
+                    Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae
+                    sit.
+                  </p>
+                </div>
+
+                <div class="item__blog--footer">
+                  <div class="anchor--blog">
+                    <a href="" class="anchor--img">
+                      <img src="./img/team3.jpg" alt="" />
+                    </a>
+                    <a href="" class="anchor--name">Rashed Kabir</a>
+                  </div>
+                  <a href="" class="read--blog">
+                    Read More <i class="fa fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="testimonials__title">
+        <h6 class="title-section">Testimonials</h6>
+        <h3 class="title-secondary">What People Say</h3>
+      </div>
+      <div class="testimonials__content">
+        <div class="container">
+          <div class="testimonials--item">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="item-img">
+                  <img src="./img/team1.jpg" alt="" />
+                </div>
+                <div class="item-quote">
+                  <q>OMG! I cannot believe. It's Awesome</q>
+                </div>
+                <p class="text-content">
+                  My new site is so much faster and easier to work with than my old site.
+                  They are here to help the customers to get their success. Nemo sit eos,
+                  quod minus eius illo labore. Pellen tesque libero ut justo, ultrices in
+                  ligula.
+                </p>
+                <div class="item-info">
+                  <h3>Johnson william</h3>
+                  <p class="text-content">Customer</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-img">
+                  <img src="./img/team2.jpg" alt="" />
+                </div>
+                <div class="item-quote">
+                  <q>OMG! I cannot believe. It's Awesome</q>
+                </div>
+                <p class="text-content">
+                  My new site is so much faster and easier to work with than my old site.
+                  They are here to help the customers to get their success. Nemo sit eos,
+                  quod minus eius illo labore. Pellen tesque libero ut justo, ultrices in
+                  ligula.
+                </p>
+                <div class="item-info">
+                  <h3>Johnson william</h3>
+                  <p class="text-content">Customer</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-img">
+                  <img src="./img/team3.jpg" alt="" />
+                </div>
+                <div class="item-quote">
+                  <q>OMG! I cannot believe. It's Awesome</q>
+                </div>
+                <p class="text-content">
+                  My new site is so much faster and easier to work with than my old site.
+                  They are here to help the customers to get their success. Nemo sit eos,
+                  quod minus eius illo labore. Pellen tesque libero ut justo, ultrices in
+                  ligula.
+                </p>
+                <div class="item-info">
+                  <h3>Johnson william</h3>
+                  <p class="text-content">Customer</p>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-img">
+                  <img src="./img/team4.jpg" alt="placeholder image" />
+                </div>
+                <div class="item-quote">
+                  <q>OMG! I cannot believe. It's Awesome</q>
+                </div>
+                <p class="text-content">
+                  My new site is so much faster and easier to work with than my old site.
+                  They are here to help the customers to get their success. Nemo sit eos,
+                  quod minus eius illo labore. Pellen tesque libero ut justo, ultrices in
+                  ligula.
+                </p>
+                <div class="item-info">
+                  <h3>Johnson william</h3>
+                  <p class="text-content">Customer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+      <div class="contact_content">
+        <div class="container">
+          <div class="contact__input">
+            <div class="contact__header">
+              <h6 class="contact__header-title1">Get in touch</h6>
+              <h3 class="contact__header-title2">Contact Us</h3>
+              <p class="mb-sm-5">
+                Start working with Us that can provide everything you need to generate
+                awareness, drive traffic, connect.<br />
+                We guarantee that you’ll be able to have any issue resolved within 24
+                hours.
+              </p>
+            </div>
+            <form>
+              <div class="contact__form-input">
+                <input class="form-control" type="text" placeholder="Name" />
+                <input class="form-control" type="email" placeholder="Email" />
+                <input class="form-control" type="text" placeholder="Subject" />
+              </div>
+              <textarea
+                style="min-height: 200px"
+                class="form-control"
+                placeholder="Message"
+              ></textarea>
+              <div class="contact__form-btn">
+                <button type="submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+          <div class="contact__address">
+            <div class="contact-address">
+              <div class="cont-title">
+                <h6 class="cont-title1">Find Us</h6>
+                <h3 class="cont-title2">Additional Info</h3>
+              </div>
+              <div class="cont-top">
+                <div class="cont-left">
+                  <i class="fa fa-phone"></i>
+                </div>
+                <div class="cont-right">
+                  <h5>Phone number</h5>
+                  <p><a href="tel:+(21) 255 088 4943">+(21) 255 088 4943</a></p>
+                </div>
+              </div>
+              <div class="cont-top marginup">
+                <div class="cont-left">
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <div class="cont-right">
+                  <h5>Send Email</h5>
+                  <p><a href="mailto:diner@mail.com">diner@mail.com</a></p>
+                </div>
+              </div>
+              <div class="cont-top marginup">
+                <div class="cont-left">
+                  <i class="fa fa-map-marker-alt"></i>
+                </div>
+                <div class="cont-right">
+                  <h5>Office Address</h5>
+                  <p>
+                    <a href="https://goo.gl/maps/TNfyhbQXSAzYMGhn6"
+                      >Address here, 434 Food Honey street, London, UK - 62617.</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-map">
+              <div class="map-iframe">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317715.71191510477!2d-0.3817821915245759!3d51.528735199175436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2zTHXDom4gxJDDtG4sIFbGsMahbmcgUXXhu5FjIEFuaA!5e0!3m2!1svi!2s!4v1655546295247!5m2!1svi!2s"
+                  width="100%"
+                  height="400"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__cover">
+        <div class="container">
+          <div class="row footer__row">
+            <div class="col-lg-4 col-md-6 col-sm-7 footer__c1 pr-lg-5">
+              <div class="footer__logo mb-4">
+                <h2><a href="#" class="footer__c1-title">Diner</a></h2>
+              </div>
+              <p>
+                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in
+                ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper at elit.
+              </p>
+              <div class="footer__social mt-4">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer__c2 mt-sm-0 mt-5">
+              <ul>
+                <h5 class="footer__title">Usefull Links</h5>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Blog posts</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer__c2 mt-lg-0 mt-5">
+              <ul>
+                <h5 class="footer__title">More Info</h5>
+                <li><a href="">History</a></li>
+                <li><a href="">Vision & Values</a></li>
+                <li><a href="">Awards</a></li>
+                <li><a href="">Media</a></li>
+                <li><a href="">Support</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-7 footer__c3">
+              <h5 class="footer__title">Subscribe to our Newsletter</h5>
+              <p>
+                Enter your email and receive the latest news, updates and special offers
+                from us.
+              </p>
+              <form class="footer__form mt-4">
+                <input type="email" placeholder="Your Email Addrees" />
+                <button class="btn-1 w-100 mt-3">Subscibe Now</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <div class="container">
+          <div class="row bottom__copies">
+            <p class="col-lg-8 copy-left">
+              © 2021 Diner. All rights reserved. Design by
+              <a href="#">W3Layouts</a>
+            </p>
+            <div class="col-lg-4 copy-right">
+              <a href="">Careers</a>
+              <a href="">Privacy Policy</a>
+              <a href="">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top  -->
+    <div class="backtotop" onclick="topFunction()" id="back-to-top">
+      <a href="#">⤴</a>
+      <!-- <a href="#"><i class="fa fa-arrow-up"></i></a> -->
+    </div>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jquery waypoints  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <!-- Magnific Popup -->
+    <script src="./js/jquery.magnific-popup.js"></script>
+
+    <!-- countup js  -->
+    <script src="./js/jquery.countup.js"></script>
+
+    <!-- Swiper js  -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- OwlCarousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- JS -->
+    <script src="./js/index.js"></script>
   </body>
 </html>

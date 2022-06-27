@@ -115,6 +115,39 @@
     padding: 4.8rem 0;
   }
 }
+// story-darkmode
+.story-darkmode {
+  .story__title {
+    h3 {
+      color: #eee !important;
+    }
+  }
+
+  .story__content {
+    .story__text {
+      h3 {
+        color: #eee !important;
+      }
+      p {
+        color: $font-dark !important;
+      }
+    }
+  }
+
+  .story__detail {
+    .story__detail--left {
+      h3 {
+        color: #eee !important;
+      }
+    }
+
+    .story__detail--right {
+      p {
+        color: $font-dark !important;
+      }
+    }
+  }
+}
 
 // skills
 .skills {
@@ -179,8 +212,32 @@
     padding: 4.8rem 0;
   }
 }
+// skill-darkmode
+.skills-darkmode {
+  background-color: $bg-dark-grey !important;
 
-//ourteam
+  .skills__title {
+    h3 {
+      color: #eee !important;
+    }
+    p {
+      color: $font-dark !important;
+    }
+  }
+
+  .skills__progess {
+    .skills__progress--item {
+      h5 {
+        color: #eee !important;
+      }
+      .progress {
+        background-color: $font-dark !important;
+      }
+    }
+  }
+}
+
+// ourteam
 .ourteam {
   padding: 7rem 0;
   &__title {
@@ -252,6 +309,10 @@
           a {
             text-decoration: none;
           }
+
+          &:hover a.text-team {
+            color: $color-primary;
+          }
         }
       }
     }
@@ -259,5 +320,24 @@
 
   @include mobile-md {
     padding: 4.8rem 0;
+  }
+}
+// ourteam-darkmode
+.ourteam-darkmode {
+  .ourteam__title {
+    h3 {
+      color: #eee !important;
+    }
+  }
+
+  .ourteam__content {
+    .ourteam__content--item {
+      a {
+        color: $font-dark;
+      }
+      p {
+        color: $font-dark;
+      }
+    }
   }
 }

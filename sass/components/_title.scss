@@ -32,6 +32,23 @@
   }
 }
 
+.title-secondary-darkmode {
+  margin: 0;
+  @include Text(3.8rem, $fw-600, $color-white !important);
+  margin-bottom: 2.4rem;
+  line-height: 4.8rem;
+
+  @include mobile-md {
+    @include Text(3.2rem, $fw-600, $color-white !important);
+    line-height: 4rem;
+  }
+
+  @include mobile-sm {
+    @include Text(2.6rem, $fw-600, $color-white !important);
+    line-height: 3.6rem;
+  }
+}
+
 .title-section {
   margin: 0;
   letter-spacing: 1px;

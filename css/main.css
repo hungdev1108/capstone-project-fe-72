@@ -90,6 +90,15 @@
   }
 }
 
+.btn__search-dark {
+  background-color: #232220;
+  color: #c2d0da;
+}
+
+.btn__search-dark:focus {
+  background-color: #232220;
+}
+
 .title-primary {
   margin: 0;
   font-size: 5.4rem;
@@ -144,6 +153,33 @@
   }
 }
 
+.title-secondary-darkmode {
+  margin: 0;
+  font-size: 3.8rem;
+  font-weight: 600;
+  color: #fff !important;
+  margin-bottom: 2.4rem;
+  line-height: 4.8rem;
+}
+
+@media (max-width: 768px) {
+  .title-secondary-darkmode {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #fff !important;
+    line-height: 4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .title-secondary-darkmode {
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: #fff !important;
+    line-height: 3.6rem;
+  }
+}
+
 .title-section {
   margin: 0;
   letter-spacing: 1px;
@@ -171,7 +207,7 @@
 .text-content {
   font-size: 1.8rem;
   font-weight: 400;
-  color: rgba(22, 28, 45, 0.7);
+  color: rgba(22, 28, 45, 0.702);
   line-height: 2.8rem;
 }
 
@@ -179,7 +215,7 @@
   .text-content {
     font-size: 1.6rem;
     font-weight: 400;
-    color: rgba(22, 28, 45, 0.7);
+    color: rgba(22, 28, 45, 0.702);
     line-height: 2.6rem;
   }
 }
@@ -423,7 +459,7 @@ body {
   padding: 1rem 5rem 1rem 2rem;
   font-size: 1.6rem;
   font-weight: 400;
-  color: rgba(22, 28, 45, 0.7);
+  color: rgba(22, 28, 45, 0.702);
   border-radius: 6px;
 }
 
@@ -434,7 +470,7 @@ body {
 .banner-home .header .navbar__right--search a {
   text-decoration: none;
   list-style: none;
-  color: rgba(22, 28, 45, 0.7);
+  color: rgba(22, 28, 45, 0.702);
 }
 
 .banner-home .header .navbar__right--search a .search__icon {
@@ -529,6 +565,26 @@ body {
   }
 }
 
+.banner-home-darkmode .header .navbar .navbar__right .navbar__right--search .search__input {
+  background-color: #232220 !important;
+}
+
+.banner-home-darkmode .header .navbar .navbar__right .navbar__right--search .form-control {
+  border: 1px solid #232220 !important;
+}
+
+.banner-home-darkmode .header .navbar .navbar__right .navbar__right--search .form-control:focus {
+  color: #c2d0da;
+  border-color: #232220 !important;
+  outline: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.banner-home-darkmode .header .navbar .navbar__right .navbar__right--search a {
+  color: #c2d0da;
+}
+
 .form-control {
   border: 1px solid #fff !important;
 }
@@ -582,7 +638,7 @@ body {
   padding: 1rem 5rem 1rem 2rem;
   font-size: 1.6rem;
   font-weight: 400;
-  color: rgba(22, 28, 45, 0.7);
+  color: rgba(22, 28, 45, 0.702);
   border-radius: 0.6rem;
 }
 
@@ -593,7 +649,7 @@ body {
 .banner-subsite .header .navbar__right--search a {
   text-decoration: none;
   list-style: none;
-  color: rgba(22, 28, 45, 0.7);
+  color: rgba(22, 28, 45, 0.702);
 }
 
 .banner-subsite .header .navbar__right--search a .search__icon {
@@ -682,6 +738,26 @@ body {
   outline: none;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+}
+
+.banner-subsite-darkmodee .header .navbar .navbar__right .navbar__right--search .search__input {
+  background-color: #232220 !important;
+}
+
+.banner-subsite-darkmodee .header .navbar .navbar__right .navbar__right--search .form-control {
+  border: 1px solid #232220 !important;
+}
+
+.banner-subsite-darkmodee .header .navbar .navbar__right .navbar__right--search .form-control:focus {
+  color: #c2d0da;
+  border-color: #232220 !important;
+  outline: none;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.banner-subsite-darkmodee .header .navbar .navbar__right .navbar__right--search a {
+  color: #c2d0da;
 }
 
 .footer {
@@ -1122,10 +1198,6 @@ body {
   }
 }
 
-.aboutUs-darkmode {
-  background-color: #232220;
-}
-
 .aboutUs-darkmode h3 {
   color: #eee !important;
 }
@@ -1139,6 +1211,9 @@ body {
 }
 
 .booking .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   --bs-gutter-x: 0;
   --bs-gutter-y: 0;
 }
@@ -1240,6 +1315,14 @@ body {
   .booking .row .col .booking__right {
     padding: 2.4rem 3rem 4rem 3rem;
   }
+}
+
+.booking-darkmode .booking__right .booking__right--info h3 {
+  color: #eee !important;
+}
+
+.booking-darkmode .booking__right .booking__right--info .info--reviews .review-item a {
+  color: #eee !important;
 }
 
 .categories {
@@ -1365,6 +1448,14 @@ body {
   z-index: 1;
 }
 
+.categories-darkmode {
+  background-color: #282828;
+}
+
+.categories-darkmode h3 {
+  color: #eee !important;
+}
+
 .services {
   padding: 9.6rem 0;
 }
@@ -1426,6 +1517,10 @@ body {
   transition: all 0.5s;
 }
 
+.services .row .col .item .item__service .item__service--top .icon:hover {
+  background-color: #ff6600;
+}
+
 .services .row .col .item .item__service .item__service--top .info {
   padding-left: 3rem;
 }
@@ -1461,6 +1556,31 @@ body {
   .services {
     padding: 6.4rem 0;
   }
+}
+
+.services-darkmode .item__service {
+  background-color: #232220 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.services-darkmode .item__service .item__service--top .icon {
+  background-color: #282828 !important;
+}
+
+.services-darkmode .item__service .item__service--top .info p {
+  color: #c2d0da !important;
+}
+
+.services-darkmode .item__service .item__service--top .info a {
+  color: #eee !important;
+}
+
+.services-darkmode .item__service .item__service--bottom p {
+  color: #c2d0da;
+}
+
+.services-darkmode .item__service:hover .icon {
+  background-color: #ff6600 !important;
 }
 
 .welcome-bg {
@@ -1655,6 +1775,23 @@ body {
     margin: 0;
     padding-top: 4rem;
   }
+}
+
+.stats-darkmode .item__stats {
+  background-color: #232220 !important;
+}
+
+.stats-darkmode .item__stats .counter .counter-num {
+  color: #eee !important;
+}
+
+.stats-darkmode .item__stats .counter:hover {
+  -webkit-box-shadow: #2e293314 0px 2px 4px, #473f4f29 0px 5px 10px !important;
+          box-shadow: #2e293314 0px 2px 4px, #473f4f29 0px 5px 10px !important;
+}
+
+.stats-darkmode .item__stats p {
+  color: #c2d0da;
 }
 
 .videoIntro {
@@ -1930,6 +2067,34 @@ body {
   }
 }
 
+.blog-darkmode {
+  background-color: #282828 !important;
+}
+
+.blog-darkmode .blog__title h3 {
+  color: #eee !important;
+}
+
+.blog-darkmode .blog__content .item__blog--body a {
+  color: #eee !important;
+}
+
+.blog-darkmode .blog__content .item__blog--body p {
+  color: #c2d0da !important;
+}
+
+.blog-darkmode .blog__content .item__blog--footer .anchor--blog a {
+  color: #eee !important;
+}
+
+.blog-darkmode .blog__content .item__blog--footer .read--blog {
+  color: #eee !important;
+}
+
+.blog-darkmode .blog__content .item__blog--footer .read--blog:hover {
+  color: #ff6600 !important;
+}
+
 .testimonials {
   padding: 9.6rem 0 7.6rem 0;
 }
@@ -2030,6 +2195,26 @@ body {
   .testimonials {
     padding: 4.8rem 0;
   }
+}
+
+.testimonials-darkmode .testimonials__title h3 {
+  color: #eee !important;
+}
+
+.testimonials-darkmode .testimonials__content .testimonials--item .item-quote q {
+  color: #eee !important;
+}
+
+.testimonials-darkmode .testimonials__content .testimonials--item p {
+  color: #c2d0da !important;
+}
+
+.testimonials-darkmode .testimonials__content .testimonials--item .item-info h3 {
+  color: #eee !important;
+}
+
+.testimonials-darkmode .testimonials__content .testimonials--item .item-info p {
+  color: #c2d0da !important;
 }
 
 .story {
@@ -2178,6 +2363,26 @@ body {
   }
 }
 
+.story-darkmode .story__title h3 {
+  color: #eee !important;
+}
+
+.story-darkmode .story__content .story__text h3 {
+  color: #eee !important;
+}
+
+.story-darkmode .story__content .story__text p {
+  color: #c2d0da !important;
+}
+
+.story-darkmode .story__detail .story__detail--left h3 {
+  color: #eee !important;
+}
+
+.story-darkmode .story__detail .story__detail--right p {
+  color: #c2d0da !important;
+}
+
 .skills {
   padding: 9.6rem 0 7.6rem 0;
   background: #f7f7f7;
@@ -2206,7 +2411,7 @@ body {
 
 .skills .row .col .skills__progress--item .progress {
   height: 0.6rem;
-  background-color: rgba(22, 28, 45, 0.7);
+  background-color: rgba(22, 28, 45, 0.702);
 }
 
 .skills .row .col .skills__progress--item .progress .progress-bar-striped {
@@ -2244,6 +2449,26 @@ body {
   .skills {
     padding: 4.8rem 0;
   }
+}
+
+.skills-darkmode {
+  background-color: #282828 !important;
+}
+
+.skills-darkmode .skills__title h3 {
+  color: #eee !important;
+}
+
+.skills-darkmode .skills__title p {
+  color: #c2d0da !important;
+}
+
+.skills-darkmode .skills__progess .skills__progress--item h5 {
+  color: #eee !important;
+}
+
+.skills-darkmode .skills__progess .skills__progress--item .progress {
+  background-color: #c2d0da !important;
 }
 
 .ourteam {
@@ -2321,10 +2546,26 @@ body {
   text-decoration: none;
 }
 
+.ourteam__content .row .col .ourteam__content--item:hover a.text-team {
+  color: #ff6600;
+}
+
 @media (max-width: 768px) {
   .ourteam {
     padding: 4.8rem 0;
   }
+}
+
+.ourteam-darkmode .ourteam__title h3 {
+  color: #eee !important;
+}
+
+.ourteam-darkmode .ourteam__content .ourteam__content--item a {
+  color: #c2d0da;
+}
+
+.ourteam-darkmode .ourteam__content .ourteam__content--item p {
+  color: #c2d0da;
 }
 
 .services__about {
@@ -2465,7 +2706,7 @@ body {
 .services__home .container .services__item .services__item-box .services__box-info p {
   font-size: 18px;
   font-weight: 400;
-  color: rgba(22, 28, 45, 0.7);
+  color: rgba(22, 28, 45, 0.702);
   line-height: 28px;
 }
 
@@ -2495,7 +2736,7 @@ body {
 .services__home .container .services__item p {
   font-size: 18px;
   font-weight: 400;
-  color: rgba(22, 28, 45, 0.7);
+  color: rgba(22, 28, 45, 0.702);
   line-height: 28px;
 }
 
@@ -2701,7 +2942,7 @@ body {
   margin-top: 10px;
   font-size: 18px;
   font-weight: 400;
-  color: rgba(22, 28, 45, 0.7);
+  color: rgba(22, 28, 45, 0.702);
   line-height: 28px;
 }
 
@@ -2756,7 +2997,7 @@ body {
 .pagenotfound__block .form .input__text {
   font-size: 1.8rem;
   font-weight: 500;
-  color: rgba(22, 28, 45, 0.7);
+  color: rgba(22, 28, 45, 0.702);
   display: block;
   border-radius: 6px;
   background: #f7f7f7;
@@ -2805,6 +3046,30 @@ body {
 
 .pagenotfound__block .backtohome:hover {
   color: #ff6600;
+}
+
+.pagenotfound-darkmode .pagenotfound__block h1 {
+  color: #eee !important;
+}
+
+.pagenotfound-darkmode .pagenotfound__block h2 {
+  color: #eee !important;
+}
+
+.pagenotfound-darkmode .pagenotfound__block p {
+  color: #c2d0da;
+}
+
+.pagenotfound-darkmode .pagenotfound__block .form .input__text {
+  background-color: #282828;
+}
+
+.pagenotfound-darkmode .pagenotfound__block .backtohome {
+  color: #eee !important;
+}
+
+.pagenotfound-darkmode .pagenotfound__block .backtohome:hover {
+  color: #ff6600 !important;
 }
 
 .blog {
@@ -2938,7 +3203,7 @@ body {
 .blog .container .blog__body .blog__post-left .blog__left .blog__item .blog__card .blog__card-bottom p {
   font-size: 18px;
   font-weight: 400;
-  color: rgba(22, 28, 45, 0.7);
+  color: rgba(22, 28, 45, 0.702);
   padding: 0;
   margin: 0;
   line-height: 28px;
@@ -3033,7 +3298,7 @@ body {
   padding: 0.8rem 1.6rem;
   font-size: 16px;
   font-weight: 700;
-  color: rgba(22, 28, 45, 0.7);
+  color: rgba(22, 28, 45, 0.702);
   -webkit-transition: background-color 0.15s linear, color 0.15s linear;
   transition: background-color 0.15s linear, color 0.15s linear;
   -webkit-box-shadow: 0 25px 98px 0 #13131308;
@@ -3145,7 +3410,7 @@ body {
 .blog .container .blog__body .blog__post-right .blog__sideBar-widget .sideBar__post .blog-title .pos-info {
   font-size: 16px;
   font-weight: 400;
-  color: rgba(22, 28, 45, 0.7);
+  color: rgba(22, 28, 45, 0.702);
   line-height: 1.5;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -3157,13 +3422,13 @@ body {
 }
 
 .blog .container .blog__body .sideBar__category .blog__cat li {
-  color: rgba(22, 28, 45, 0.7);
+  color: rgba(22, 28, 45, 0.702);
 }
 
 .blog .container .blog__body .sideBar__category .blog__cat li a {
   font-size: 19px;
   font-weight: 500;
-  color: rgba(22, 28, 45, 0.7);
+  color: rgba(22, 28, 45, 0.702);
   display: block;
   padding: 10px 15px 10px 20px;
   position: relative;
@@ -3178,7 +3443,7 @@ body {
   content: "";
   width: 8px;
   height: 8px;
-  background-color: rgba(22, 28, 45, 0.7);
+  background-color: rgba(22, 28, 45, 0.702);
   position: absolute;
   top: 20px;
   left: 0px;
@@ -3273,7 +3538,7 @@ body {
 .contact .contact_content .container .contact__input .contact__header p {
   font-size: 18px;
   font-weight: 400;
-  color: rgba(22, 28, 45, 0.7);
+  color: rgba(22, 28, 45, 0.702);
   line-height: 28px;
   margin-bottom: 4.8rem !important;
 }
@@ -3397,7 +3662,7 @@ body {
   text-decoration: none;
   font-size: 18px;
   font-weight: 400;
-  color: rgba(22, 28, 45, 0.7);
+  color: rgba(22, 28, 45, 0.702);
 }
 
 .contact .contact_content .container .contact__address .contact-map {
@@ -3411,7 +3676,7 @@ body {
 .contact .form-control {
   background: #f7f7f7;
   border: 1px solid transparent;
-  color: rgba(22, 28, 45, 0.7);
+  color: rgba(22, 28, 45, 0.702);
   font-size: 18px;
   padding: 12px 20px;
   line-height: 28px;

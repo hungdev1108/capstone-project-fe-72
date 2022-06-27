@@ -57,9 +57,9 @@
                   <i class="fa fa-search search__icon"></i>
                 </a>
               </div>
-              <div class="navbar__right--darkmode">
+              <div onclick="darkmode();" class="navbar__right--darkmode">
                 <span>
-                  <i class="fa-solid fa-moon"></i>
+                  <i id="darkLight" class="fa-solid fa-moon"></i>
                 </span>
               </div>
               <div id="btn__open" onclick="showMenu();" class="navbar__right--menubar">
@@ -79,6 +79,34 @@
         </header>
       </div>
     </section>
+
+    <!-- Menu right sticky -->
+    <div class="menubar__right">
+      <div class="menubar--list">
+        <div class="pull-right">
+          <span>
+            <a href="">
+              <i class="fa-solid fa-angles-right"></i>
+            </a>
+          </span>
+        </div>
+        <div class="menu--item">
+          <a href="">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Back</span>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-download"></i>
+            <span>Download</span>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>Buy</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Menu right sticky -->
 
     <!-- Show Menu -->
     <div id="menu__overlay" class="menu__overlay">
@@ -426,5 +454,6 @@
 
     <!-- JS -->
     <script src="./js/index.js"></script>
+    <script src="./js/about-darkmode.js"></script>
   </body>
 </html>

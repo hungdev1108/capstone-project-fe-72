@@ -1,3 +1,4 @@
+// pagenotfound
 .pagenotfound {
   text-align: center;
   padding: 7.2rem 0;
@@ -69,6 +70,35 @@
 
       &:hover {
         color: $color-primary;
+      }
+    }
+  }
+}
+
+// pagenotfound-darkmode
+.pagenotfound-darkmode {
+  .pagenotfound__block {
+    h1 {
+      color: #eee !important;
+    }
+    h2 {
+      color: #eee !important;
+    }
+    p {
+      color: $font-dark;
+    }
+
+    .form {
+      .input__text {
+        background-color: $bg-dark-grey;
+      }
+    }
+
+    .backtohome {
+      color: #eee !important;
+
+      &:hover {
+        color: $color-primary !important;
       }
     }
   }

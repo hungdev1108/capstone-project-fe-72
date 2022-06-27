@@ -1,3 +1,4 @@
+// Banner subsite
 .banner-subsite {
   background-image: $bg-linear-1, url(../../img/banner2.jpg);
   @include bg-img(cover, no-repeat, center);
@@ -90,5 +91,32 @@
     border-color: #fff !important;
     outline: none;
     box-shadow: none !important;
+  }
+}
+
+// Banner subsite darkmode
+.banner-subsite-darkmodee {
+  .header {
+    .navbar {
+      .navbar__right {
+        .navbar__right--search {
+          .search__input {
+            background-color: $bg-dark !important;
+          }
+          .form-control {
+            border: 1px solid $bg-dark !important;
+            &:focus {
+              color: $font-dark;
+              border-color: $bg-dark !important;
+              outline: none;
+              box-shadow: none !important;
+            }
+          }
+          a {
+            color: $font-dark;
+          }
+        }
+      }
+    }
   }
 }

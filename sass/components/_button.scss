@@ -67,3 +67,11 @@
     padding: 1rem 2.1rem;
   }
 }
+
+.btn__search-dark {
+  background-color: $bg-dark;
+  color: $font-dark;
+  &:focus {
+    background-color: $bg-dark;
+  }
+}
