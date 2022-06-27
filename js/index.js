@@ -113,6 +113,9 @@ function darkmode() {
   // ===== About =====
   var ourTeam = document.querySelector(".ourteam");
 
+  // ===== Contact =====
+  var contact = document.querySelector(".contact");
+
   // Change icon moon - sun
   if (navBarIcon.className == "fa-solid fa-moon") {
     navBarIcon.className = "fa-solid fa-sun";
@@ -185,5 +188,13 @@ function darkmode() {
     ourTeam.classList.toggle("ourteam-darkmode");
   } else {
     ourTeam.classList.remove("ourteam-darkmode");
+  }
+
+  // === Contact page ===
+  // Contact
+  if (contact.className == "contact") {
+    contact.classList.toggle("contact-darkmode");
+  } else {
+    contact.classList.remove("contact-darkmode");
   }
 }
