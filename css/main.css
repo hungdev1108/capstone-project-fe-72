@@ -366,6 +366,12 @@ textarea::-webkit-input-placeholder {
   font-family: "Quicksand", sans-serif;
 }
 
+.dark-mode1 {
+  background-color: #282828 !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+}
+
 .dark-mode {
   background-color: #232220 !important;
   border-color: rgba(255, 255, 255, 0.1) !important;
@@ -3271,7 +3277,7 @@ body {
 }
 
 .blog .container .blog__body .blog__post-left .blog__left .blog__item .blog__card .blog__card-bottom .blog__bottom-footer .read:hover {
-  color: #ff6600;
+  color: #ff6600 !important;
 }
 
 .blog .container .blog__body .blog__post-left .blog__left .blog__pagination {
@@ -3307,8 +3313,8 @@ body {
 }
 
 .blog .container .blog__body .blog__post-left .blog__left .blog__pagination .blog__paganation-page li .page__number:hover {
-  color: #ff6600;
-  border: 1px solid #ff6600;
+  color: #ff6600 !important;
+  border: 1px solid #ff6600 !important;
 }
 
 .blog .container .blog__body .blog__post-left .blog__left .blog__pagination .blog__paganation-page li .current {
@@ -3456,7 +3462,7 @@ body {
 }
 
 .blog .container .blog__body .sideBar__category .blog__cat li a:hover {
-  color: #ff6600;
+  color: #ff6600 !important;
 }
 
 .blog .sideBar__title {
@@ -3675,7 +3681,7 @@ body {
 
 .contact .form-control {
   background: #f7f7f7;
-  border: 1px solid transparent;
+  border: 1px solid transparent !important;
   color: rgba(22, 28, 45, 0.702);
   font-size: 18px;
   padding: 12px 20px;
@@ -3687,7 +3693,7 @@ body {
 
 .contact .form-control:focus {
   outline: none;
-  border: 1px solid #ff6600;
+  border: 1px solid #ff6600 !important;
   -webkit-box-shadow: none;
           box-shadow: none;
   background: #fff;
@@ -3695,5 +3701,38 @@ body {
 
 .contact .marginup {
   margin-top: 2.4rem;
+}
+
+.contact .map-iframe.dark-modep iframe {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.contact-darkmode .contact_content .container .contact__input .contact__header h3 {
+  color: #eee !important;
+}
+
+.contact-darkmode .contact_content .container .contact__input .contact__header p {
+  color: #c2d0da !important;
+}
+
+.contact-darkmode .contact_content .container .contact__input form .contact__form-input .form-control {
+  background-color: #282828;
+}
+
+.contact-darkmode .contact_content .container .contact__input form textarea.form-control {
+  background-color: #282828;
+}
+
+.contact-darkmode .contact_content .container .contact__address .contact-address .cont-title h3 {
+  color: #eee !important;
+}
+
+.contact-darkmode .contact_content .container .contact__address .contact-address .cont-top .cont-right h5 {
+  color: #eee !important;
+}
+
+.contact-darkmode .contact_content .container .contact__address .contact-address .cont-top .cont-right p a {
+  color: #c2d0da !important;
 }
 /*# sourceMappingURL=main.css.map */

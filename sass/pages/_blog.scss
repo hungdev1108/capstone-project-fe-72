@@ -130,7 +130,7 @@
                     text-decoration: none;
                     transition: all 0.3s;
                     &:hover {
-                      color: $color-primary;
+                      color: $color-primary !important;
                     }
                   }
                 }
@@ -156,8 +156,8 @@
                   box-shadow: 0 25px 98px 0 #13131308;
                   text-decoration: none;
                   &:hover {
-                    color: $color-primary;
-                    border: 1px solid $color-primary;
+                    color: $color-primary !important;
+                    border: 1px solid $color-primary !important;
                   }
                 }
                 .current {
@@ -274,7 +274,7 @@
                 opacity: 1;
               }
               &:hover {
-                color: $color-primary;
+                color: $color-primary !important;
               }
             }
           }

@@ -141,7 +141,7 @@
   }
   .form-control {
     background: #f7f7f7;
-    border: 1px solid transparent;
+    border: 1px solid transparent !important;
     color: $font-color;
     font-size: 18px;
     padding: 12px 20px;
@@ -151,12 +151,68 @@
     height: 58px;
     &:focus {
       outline: none;
-      border: 1px solid $color-primary;
+      border: 1px solid $color-primary !important;
       box-shadow: none;
       background: $color-white;
     }
   }
   .marginup {
     margin-top: 2.4rem;
+  }
+  .map-iframe.dark-modep {
+    iframe {
+      filter: grayscale(100%);
+    }
+  }
+}
+
+// contact-darkmode
+.contact-darkmode {
+  .contact_content {
+    .container {
+      .contact__input {
+        .contact__header {
+          h3 {
+            color: #eee !important;
+          }
+          p {
+            color: $font-dark !important;
+          }
+        }
+        form {
+          .contact__form-input {
+            .form-control {
+              background-color: $bg-dark-grey;
+            }
+          }
+          textarea.form-control {
+            background-color: $bg-dark-grey;
+          }
+        }
+      }
+
+      .contact__address {
+        .contact-address {
+          .cont-title {
+            h3 {
+              color: #eee !important;
+            }
+          }
+
+          .cont-top {
+            .cont-right {
+              h5 {
+                color: #eee !important;
+              }
+              p {
+                a {
+                  color: $font-dark !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
