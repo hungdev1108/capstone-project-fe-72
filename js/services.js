@@ -26,7 +26,11 @@ var maph1 = qur("h3.cont-title2");
 var maph2 = qur(".cont-right>h5");
 var maph3 = qur(".cont-right>p>a");
 var maph4 = qur(".map-iframe");
+// iconheader
+var iconheader = document.querySelector(".search__icon");
+
 lick.onclick = function () {
+  iconheader.classList.toggle("dark-modeh");
   //contact
   for (let i = 0; i < maph4.length; i++) {
     maph4[i].classList.toggle("dark-modep");
