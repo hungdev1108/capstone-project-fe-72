@@ -3,6 +3,9 @@ function darkmode() {
   var bgBodyDark = document.getElementsByTagName("body")[0];
   var navBarIcon = document.querySelector("#darkLight");
 
+  // ===== Footer =====
+  var footer = document.querySelector(".footer");
+
   // Change icon moon - sun
   if (navBarIcon.className == "fa-solid fa-moon") {
     navBarIcon.className = "fa-solid fa-sun";
@@ -28,5 +31,13 @@ function darkmode() {
     pageNotFound.classList.toggle("pagenotfound-darkmode");
   } else {
     pageNotFound.classList.remove("pagenotfound-darkmode");
+  }
+
+  // === Footer ===
+  // Footer
+  if (footer.className == "footer") {
+    footer.classList.toggle("footer-darkmode");
+  } else {
+    footer.classList.remove("footer-darkmode");
   }
 }

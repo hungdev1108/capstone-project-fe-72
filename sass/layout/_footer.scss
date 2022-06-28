@@ -192,3 +192,25 @@
     }
   }
 }
+
+// footer-darkmode
+.footer-darkmode {
+  .footer__cover {
+    .footer__row {
+      .footer__c1 {
+        .footer__social {
+          a {
+            background-color: $bg-dark !important;
+          }
+        }
+      }
+      .footer__c3 {
+        .footer__form {
+          input {
+            background-color: $bg-dark !important;
+          }
+        }
+      }
+    }
+  }
+}

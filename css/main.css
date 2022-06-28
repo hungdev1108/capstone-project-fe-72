@@ -1011,6 +1011,14 @@ body {
   color: #ff6600;
 }
 
+.footer-darkmode .footer__cover .footer__row .footer__c1 .footer__social a {
+  background-color: #232220 !important;
+}
+
+.footer-darkmode .footer__cover .footer__row .footer__c3 .footer__form input {
+  background-color: #232220 !important;
+}
+
 .menu__overlay {
   position: fixed;
   width: 100%;
@@ -1096,7 +1104,7 @@ body {
   height: 100%;
   z-index: 7777;
   right: 0;
-  top: 6rem;
+  top: 10rem;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
