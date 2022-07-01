@@ -20,6 +20,7 @@ var slidebar4 = qur(".pos-info");
 var slidebar5 = qur(".blog__cat>li>a");
 var slidebar6 = qur("a.page__number");
 var t = qur("h3.sideBar__title");
+
 //contact
 var input = qur(".form-control");
 var maph1 = qur("h3.cont-title2");
@@ -53,7 +54,7 @@ lick.onclick = function () {
 
   dark.classList.toggle("dark-mode");
   fonth3.classList.toggle("dark-modeh");
-  fonthh3.classList.toggle("dark-modeh");
+
   for (let i = 0; i < font.length; i++) {
     font[i].classList.toggle("dark-modep");
   }
@@ -108,7 +109,8 @@ lick.onclick = function () {
     slidebar6[i].classList.toggle("dark-mode1");
   }
   navBarIcon.classList.toggle("fa-sun");
-  navBarIcon.classList.toggle(" fa-moon");
+  navBarIcon.classList.toggle("fa-moon");
+  fonthh3.classList.toggle("dark-modeh");
 };
 function qur(ele) {
   return document.querySelectorAll(ele);
