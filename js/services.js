@@ -29,6 +29,8 @@ var maph4 = qur(".map-iframe");
 // iconheader
 var iconheader = document.querySelector(".search__icon");
 
+var fonthh3 = document.querySelector("h3.services__header-title2");
+
 lick.onclick = function () {
   iconheader.classList.toggle("dark-modeh");
   //contact
@@ -51,6 +53,7 @@ lick.onclick = function () {
 
   dark.classList.toggle("dark-mode");
   fonth3.classList.toggle("dark-modeh");
+  fonthh3.classList.toggle("dark-modeh");
   for (let i = 0; i < font.length; i++) {
     font[i].classList.toggle("dark-modep");
   }
